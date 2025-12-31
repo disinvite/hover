@@ -40,6 +40,18 @@ public:
 
 protected:
     DECLARE_MESSAGE_MAP()
+
+    // unsigned char padding[832];     // 0xd4 ?
+    CRITICAL_SECTION m_critical0;    // 0x0d4
+    CRITICAL_SECTION m_critical1;    // 0x0ec
+    CRITICAL_SECTION m_critical2;    // 0x104
+    CRITICAL_SECTION m_critical3;    // 0x11c
+    CRITICAL_SECTION m_critical4;    // 0x134
+    //14c next.
+
+    BOOL m_is386;                   // 0x1d0
+
+    CString m_unk414;               // 0x414
 };
 
 // SYNTHETIC: HOVER 0x426660

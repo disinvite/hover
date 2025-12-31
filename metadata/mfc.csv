@@ -18,6 +18,9 @@ address,type,symbol
 43de40,function,?GrayStringA@CDC@@UAEHPAVCBrush@@P6GHPAUHDC__@@JH@ZJHHHHH@Z
 43de76,function,?Escape@CDC@@UAEHHHPBDPAX@Z
 448a3c,function,?AfxThrowMemoryException@@YGXXZ
+4494cc,function,??0CObArray@@QAE@XZ
+449534,function,??1CObArray@@UAE@XZ
+449724,function,?Serialize@CObArray@@UAEXAAVCArchive@@@Z
 4497e8,function,??0CPtrList@@QAE@H@Z
 44985b,function,?RemoveAll@CPtrList@@QAEXXZ
 44987b,function,??1CPtrList@@UAE@XZ
@@ -229,7 +232,9 @@ address,type,symbol
 45dca9,function,?GetRuntimeClass@CButton@@UBEPAUCRuntimeClass@@XZ
 45e1e7,function,?GetRuntimeClass@CDocument@@UBEPAUCRuntimeClass@@XZ
 45e232,function,?GetRuntimeClass@CObList@@UBEPAUCRuntimeClass@@XZ
+45e2df,function,?Construct@CObArray@@SGXPAX@Z
 45e2ff,function,?GetRuntimeClass@CObArray@@UBEPAUCRuntimeClass@@XZ
+45e30a,function,??_GCObArray@@UAEPAXI@Z
 45e36b,function,?GetRuntimeClass@CPtrList@@UBEPAUCRuntimeClass@@XZ
 45e376,function,??_GCPtrList@@UAEPAXI@Z
 45e3a4,function,?GetRuntimeClass@CMapPtrToPtr@@UBEPAUCRuntimeClass@@XZ
@@ -249,6 +254,8 @@ address,type,symbol
 4b7ef0,global,?afxData@@3UAUX_DATA@@A
 4b7f88,global,?_afxCriticalSection@@3VAFX_CRITICAL_SECTION@@A
 4bb670,vtable,??_7CObject@@6B@
+4bb688,vtable,??_7CBrush@@6B@@
+4bb6a0,vtable,??_7CPen@@6B@@
 4bb6b8,vtable,??_7CGdiObject@@6B@
 4bfee0,global,?messageMap@CDialog@@1UAFX_MSGMAP@@B
 4bfee8,global,?_messageEntries@CDialog@@0QBUAFX_MSGMAP_ENTRY@@B
@@ -269,6 +276,8 @@ address,type,symbol
 4c08c0,global,?_messageEntries@CWnd@@0QBUAFX_MSGMAP_ENTRY@@B
 4c0af8,vtable,??_7CWnd@@6B@
 4c0de0,vtable,??_7CDC@@6B@
+4c2180,vtable,??_7CMapStringToOb@@6B@@
+4c2340,vtable,??_7CObArray@@6B@
 4c2610,vtable,??_7CPtrList@@6B@
 4c27f8,vtable,??_7CMapPtrToPtr@@6B@
 4c68b8,global,?classCDialog@CDialog@@2UCRuntimeClass@@A
@@ -287,5 +296,6 @@ address,type,symbol
 4c6b30,global,?classCBitmap@CBitmap@@2UCRuntimeClass@@A
 4c6de0,global,?classCException@CException@@2UCRuntimeClass@@A
 4c6df8,global,?classCMemoryException@CMemoryException@@2UCRuntimeClass@@A
+4c71e8,global,?classCObArray@CObArray@@2UCRuntimeClass@@A
 4c7238,global,?classCPtrList@CPtrList@@2UCRuntimeClass@@A
 4c7268,global,?classCMapPtrToPtr@CMapPtrToPtr@@2UCRuntimeClass@@A

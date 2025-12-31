@@ -1,6 +1,7 @@
 #include "hover.h"
 
 #include "hover_mfc.h"
+#include "merlin.h"
 
 BEGIN_MESSAGE_MAP(CHoverApp, CWinApp)
     ON_COMMAND(ID_APP_ABOUT, OnAppAbout)
@@ -31,11 +32,10 @@ END_MESSAGE_MAP()
 
 CHoverApp theApp;
 
-// STUB: HOVER 0x405b80
+// FUNCTION: HOVER 0x405b80
 BOOL CHoverApp::OnIdle(LONG lCount)
 {
-    // TODO
-    return FALSE;
+    return CWinApp::OnIdle(lCount);
 }
 
 // STUB: HOVER 0x412240
@@ -65,14 +65,27 @@ void CHoverApp::OnUpdateFullScreen(CCmdUI* cmd_ui)
 // STUB: HOVER 0x41c060
 BOOL CHoverApp::ExitInstance()
 {
+    ::DeleteCriticalSection(&m_critical0);
+    ::DeleteCriticalSection(&m_critical1);
+    ::DeleteCriticalSection(&m_critical2);
+    ::DeleteCriticalSection(&m_critical3);
+    ::DeleteCriticalSection(&m_critical4);
+
     // TODO
-    return FALSE;
+
+    return CWinApp::ExitInstance();
 }
 
-// STUB: HOVER 0x41c100
+// FUNCTION: HOVER 0x41c100
 CHoverApp::CHoverApp()
 {
     // TODO
+
+    SYSTEM_INFO sysinfo;
+    ::GetSystemInfo(&sysinfo);
+    m_is386 = sysinfo.dwProcessorType != PROCESSOR_INTEL_486;
+
+    DWORD dwVersion = ::GetVersion();
 }
 
 // STUB: HOVER 0x41c9e0
@@ -92,6 +105,17 @@ void CHoverApp::OnNewGame()
 void CHoverApp::OnAppAbout()
 {
     // TODO
+
+    // These are here only to get the merlin functions created
+    // so we can compare them.
+    CMerlinObject *merlinObj = new CMerlinObject();
+    CMerlinLine *merlinLine = new CMerlinLine();
+    CMerlinBSP *merlinBsp = new CMerlinBSP();
+    CMerlinDynamic *merlinDynamic = new CMerlinDynamic();
+    CMerlinLocation *merlinLocation = new CMerlinLocation();
+    CMerlinStatic *merlinStatic = new CMerlinStatic();
+    CMerlinTexture *merlinTexture = new CMerlinTexture();
+    CMerlinWorld *merlinWorld = new CMerlinWorld();
 }
 
 // STUB: HOVER 0x425730

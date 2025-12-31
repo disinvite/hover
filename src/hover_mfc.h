@@ -46,27 +46,6 @@ class CMainFrame : public CObject {};
 
 class CMapEraserPod : public CObject {};
 
-// VTABLE: HOVER 0x4bd438
-class CMerlinBSP : public CObject {};
-
-// VTABLE: HOVER 0x4bd348
-class CMerlinDynamic : public CObject {};
-
-// VTABLE: HOVER 0x4bc110
-class CMerlinLine : public CObject {};
-
-// VTABLE: HOVER 0x4bd3c0
-class CMerlinLocation : public CObject {};
-
-// VTABLE: HOVER 0x4bd808
-class CMerlinObject : public CObject {};
-
-class CMerlinStatic : public CObject {};
-
-class CMerlinTexture : public CObject {};
-
-class CMerlinWorld : public CObject {};
-
 class CMixit : public CObject {};
 
 class CPlayer : public CObject {};
@@ -77,6 +56,7 @@ class CRegionMatrix : public CObject {};
 
 class CRobotPlayer : public CObject {};
 
+// VTABLE: HOVER 0x4bc750
 class CSledPad : public CObject {};
 
 class CSlowPod : public CObject {};
@@ -87,6 +67,7 @@ class CSpeedPod : public CObject {};
 
 class CTempWallPod : public CObject {};
 
+// VTABLE: HOVER 0x4bcfd8
 class CWall : public CObject {};
 
 #endif // HOVER_MFC_H

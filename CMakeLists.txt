@@ -7,6 +7,7 @@ set(CMAKE_MFC_FLAG 1)
 include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/reccmp.cmake")
 
 add_executable(hover WIN32
+    src/merlin.cpp
     src/hover_mfc.cpp
     src/hover.cpp
 )
