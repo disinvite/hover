@@ -1,0 +1,5 @@
+.venv
+venv
+build/
+reccmp-user.yml
+reccmp-build.yml
