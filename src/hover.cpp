@@ -5,7 +5,7 @@
 
 BEGIN_MESSAGE_MAP(CHoverApp, CWinApp)
     ON_COMMAND(ID_APP_ABOUT, OnAppAbout)
-    ON_COMMAND(34012, OnCommand34012)
+    ON_COMMAND(34012, OnDebugTuningParameters)
     ON_COMMAND(32785, OnSettings)
     ON_COMMAND(32784, OnSelectControls)
     ON_COMMAND(40009, OnSounds)
@@ -17,14 +17,14 @@ BEGIN_MESSAGE_MAP(CHoverApp, CWinApp)
     ON_UPDATE_COMMAND_UI(34006, OnUpdateCommand34006)
     ON_COMMAND(34007, OnCommand34007)
     ON_UPDATE_COMMAND_UI(34007, OnUpdateCommand34007)
-    ON_COMMAND(34009, OnCommand34009)
-    ON_COMMAND(34008, OnCommand34008)
+    ON_COMMAND(34009, OnDebugDroneMotionPhysics)
+    ON_COMMAND(34008, OnDebugPlayerMotionPhysics)
     ON_COMMAND(40006, OnHighScores)
     ON_UPDATE_COMMAND_UI(40006, OnUpdateHighScores)
     ON_COMMAND(32808, OnQuickHelp)
     ON_UPDATE_COMMAND_UI(32808, OnUpdateQuickHelp)
     ON_COMMAND(32777, OnNewGame)
-    ON_COMMAND(34031, OnCommand34031)
+    ON_COMMAND(34031, OnDebugRobotTuningParameters)
     ON_COMMAND(32821, OnCommand32821)
     ON_COMMAND(ID_FILE_NEW, OnFileNew)
     ON_COMMAND(ID_FILE_OPEN, OnFileOpen)
@@ -125,7 +125,7 @@ void CHoverApp::OnAppAbout()
 }
 
 // STUB: HOVER 0x425730
-void CHoverApp::OnCommand34012()
+void CHoverApp::OnDebugTuningParameters()
 {
     // TODO
 }
@@ -179,13 +179,13 @@ void CHoverApp::OnUpdateCommand34007(CCmdUI* cmd_ui)
 }
 
 // STUB: HOVER 0x425f40
-void CHoverApp::OnCommand34009()
+void CHoverApp::OnDebugDroneMotionPhysics()
 {
     // TODO
 }
 
 // STUB: HOVER 0x426000
-void CHoverApp::OnCommand34008()
+void CHoverApp::OnDebugPlayerMotionPhysics()
 {
     // TODO
 }
@@ -209,7 +209,7 @@ void CHoverApp::OnUpdateQuickHelp(CCmdUI* cmd_ui)
 }
 
 // STUB: HOVER 0x4261b0
-void CHoverApp::OnCommand34031()
+void CHoverApp::OnDebugRobotTuningParameters()
 {
     // TODO
 }

@@ -18,7 +18,7 @@ public:
     void OnUpdateFullScreen(CCmdUI* cmd_ui);
     void OnNewGame();
     void OnAppAbout();
-    void OnCommand34012();
+    void OnDebugTuningParameters();
     void OnSelectControls();
     void OnSounds();
     void OnFullScreen();
@@ -27,12 +27,12 @@ public:
     void OnUpdateCommand34006(CCmdUI* cmd_ui);
     void OnCommand34007();
     void OnUpdateCommand34007(CCmdUI* cmd_ui);
-    void OnCommand34009();
-    void OnCommand34008();
+    void OnDebugDroneMotionPhysics();
+    void OnDebugPlayerMotionPhysics();
     void OnHighScores();
     void OnQuickHelp();
     void OnUpdateQuickHelp(CCmdUI* cmd_ui);
-    void OnCommand34031();
+    void OnDebugRobotTuningParameters();
     void OnCommand32821();
     void OnFileNew();
     void OnFileOpen();
