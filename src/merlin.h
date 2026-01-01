@@ -6,7 +6,7 @@
 // VTABLE: HOVER 0x4bd808
 // SIZE 0x14
 class CMerlinObject : public CObject {
-    DECLARE_DYNCREATE(CMerlinObject)
+    DECLARE_SERIAL(CMerlinObject)
 public:
     CMerlinObject();
     virtual ~CMerlinObject() {};
@@ -36,9 +36,11 @@ protected:
 // VTABLE: HOVER 0x4bc110
 // SIZE 0x44
 class CMerlinLine : public CMerlinObject {
-    DECLARE_DYNCREATE(CMerlinLine)
+    DECLARE_SERIAL(CMerlinLine)
 public:
     CMerlinLine();
+
+    // FUNCTION: HOVER 0x401210
     virtual ~CMerlinLine() {};
 
     virtual void Serialize(CArchive& ar);
@@ -66,8 +68,9 @@ protected:
 // VTABLE: HOVER 0x4bd438
 // SIZE 0x68
 class CMerlinBSP : public CMerlinLine {
-    DECLARE_DYNCREATE(CMerlinBSP)
+    DECLARE_SERIAL(CMerlinBSP)
 public:
+    virtual ~CMerlinBSP() {};
     virtual void Serialize(CArchive& ar);
 
     // SYNTHETIC: HOVER 0x41bb10
@@ -98,11 +101,13 @@ protected:
 // VTABLE: HOVER 0x4bd348
 // SIZE 0x70
 class CMerlinDynamic : public CMerlinLine {
-    DECLARE_DYNCREATE(CMerlinDynamic)
 public:
+    CMerlinDynamic();
+    DECLARE_SERIAL(CMerlinDynamic)
+    virtual ~CMerlinDynamic() {};
     virtual void Serialize(CArchive& ar);
 
-    // SYNTHETIC: HOVER 0x4132a0
+    // SYNTHETIC: HOVER 0x40f920
     // CMerlinDynamic::`scalar deleting destructor'
 
     // SYNTHETIC: HOVER 0x42cab0
@@ -131,8 +136,9 @@ protected:
 // VTABLE: HOVER 0x4bd3c0
 // SIZE 0x1c
 class CMerlinLocation : public CMerlinObject {
-    DECLARE_DYNCREATE(CMerlinLocation)
+    DECLARE_SERIAL(CMerlinLocation)
 public:
+    virtual ~CMerlinLocation() {};
     virtual void Serialize(CArchive& ar);
 
     // SYNTHETIC: HOVER 0x415070
@@ -157,8 +163,9 @@ protected:
 // VTABLE: HOVER 0x4bc078
 // SIZE 0xc4
 class CMerlinStatic : public CMerlinLine {
-    DECLARE_DYNCREATE(CMerlinStatic)
+    DECLARE_SERIAL(CMerlinStatic)
 public:
+    virtual ~CMerlinStatic() {};
     virtual void Serialize(CArchive& ar);
 
     // SYNTHETIC: HOVER 0x419cf0
@@ -197,8 +204,9 @@ protected:
 // VTABLE: HOVER 0x4bbd20
 // SIZE 0x44
 class CMerlinTexture : public CMerlinObject {
-    DECLARE_DYNCREATE(CMerlinTexture)
+    DECLARE_SERIAL(CMerlinTexture)
 public:
+    virtual ~CMerlinTexture() {};
     virtual void Serialize(CArchive& ar);
 
     // SYNTHETIC: HOVER 0x4128f0
@@ -230,7 +238,7 @@ protected:
 // VTABLE: HOVER 0x4bbec8
 // SIZE 0x64
 class CMerlinWorld : public CObject {
-    DECLARE_DYNCREATE(CMerlinWorld)
+    DECLARE_SERIAL(CMerlinWorld)
 public:
     virtual void Serialize(CArchive& ar);
 

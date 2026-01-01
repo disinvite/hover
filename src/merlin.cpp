@@ -40,6 +40,22 @@ void CMerlinTexture::Serialize(CArchive& ar)
     // TODO
 }
 
+// FUNCTION: HOVER 0x4132a0
+CMerlinDynamic::CMerlinDynamic()
+{
+    // TODO: ordering?
+    m_str0x44.Empty();
+    m_unk0x50 = 0;
+    m_unk0x54 = 0;
+    m_unk0x56 = 128;
+    m_unk0x58 = 128;
+    m_unk0x5a = 0;
+    m_unk0x5c = 0;
+    m_unk0x60 = 1;
+    m_unk0x64 = 1;
+    m_unk0x68 = 0;
+}
+
 // STUB: HOVER 0x414740
 void CMerlinLine::Serialize(CArchive& ar)
 {

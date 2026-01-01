@@ -154,6 +154,7 @@ address,type,symbol
 44e70a,function,?GetRuntimeClass@CObject@@UBEPAUCRuntimeClass@@XZ
 44e710,function,?IsKindOf@CObject@@QBEHPBUCRuntimeClass@@@Z
 44e733,function,?CreateObject@CRuntimeClass@@QAEPAVCObject@@XZ
+44e81f,function,??0AFX_CLASSINIT@@QAE@PAUCRuntimeClass@@@Z
 44f44d,function,?AfxFullPath@@YGHPADPBD@Z
 44f9a3,function,?FromHandle@CHandleMap@@QAEPAVCObject@@PAX@Z
 44fa45,function,?RemoveHandle@CHandleMap@@QAEXPAX@Z
