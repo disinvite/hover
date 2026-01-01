@@ -157,7 +157,7 @@ class CInviciblePod : public CPodObj {
     DECLARE_DYNAMIC(CInviciblePod);
 
     // GLOBAL: HOVER 0x4c52f0
-    // classCInvinciblePod
+    // classCInviciblePod
 };
 
 // VTABLE: HOVER 0x4bc2c0
