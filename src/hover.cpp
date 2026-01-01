@@ -92,6 +92,12 @@ CHoverApp::CHoverApp()
 BOOL CHoverApp::InitInstance()
 {
     // TODO
+    CSingleDocTemplate* doc = new CSingleDocTemplate(
+        128,
+        RUNTIME_CLASS(CBumperDoc),
+        RUNTIME_CLASS(CMainFrame),
+        RUNTIME_CLASS(CBumperView)
+    );
     return FALSE;
 }
 

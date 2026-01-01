@@ -3,19 +3,63 @@
 
 #include "stdafx.h"
 
-class CAnimateCtrl : public CObject {};
-
 // VTABLE: HOVER 0x4be698
 class CBeacon : public CObject {};
 
 // VTABLE: HOVER 0x4bae10
-class CBumperDoc : public CObject {};
+class CBumperDoc : public CDocument {
+    DECLARE_DYNCREATE(CBumperDoc);
+public:
+
+    // FUNCTION: HOVER 0x426f10
+    virtual void Serialize(CArchive& ar) {};
+
+    // SYNTHETIC: HOVER 0x41e1d0
+    // CBumperDoc::Construct
+
+    // SYNTHETIC: HOVER 0x41e230
+    // CBumperDoc::CBumperDoc
+
+    // SYNTHETIC: HOVER 0x41e0d0
+    // CBumperDoc::`scalar deleting destructor'
+
+    // SYNTHETIC: HOVER 0x426e80
+    // CBumperDoc::GetRuntimeClass
+};
 
 // VTABLE: HOVER 0x4bb6d0
-class CBumperView : public CObject {};
+class CBumperView : public CView {
+    DECLARE_DYNCREATE(CBumperView);
+public:
+    virtual void OnDraw(CDC*);
+
+    // SYNTHETIC: HOVER 0x41e5a0
+    // CBumperView::Construct
+
+    // SYNTHETIC: HOVER 0x41e700
+    // CBumperView::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x420dd0
+    // CBumperView::`scalar deleting destructor'
+
+    // GLOBAL: HOVER 0x4c4cb0
+    // classCBumperView
+};
 
 // VTABLE: HOVER 0x4bd100
-class CCollider : public CObject {};
+class CCollider : public CObject {
+    DECLARE_DYNAMIC(CCollider);
+public:
+
+    // SYNTHETIC: HOVER 0x41b6c0
+    // CCollider::`scalar deleting destructor'
+
+    // SYNTHETIC: HOVER 0x42c6e0
+    // CCollider::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c55a0
+    // classCCollider
+};
 
 // VTABLE: HOVER 0x4bca88
 class CContainer : public CObject {};
@@ -42,7 +86,19 @@ class CInviciblePod : public CObject {};
 // VTABLE: HOVER 0x4bc2c0
 class CJumpPod : public CObject {};
 
-class CMainFrame : public CObject {};
+// VTABLE: HOVER 0x4bab30
+class CMainFrame : public CFrameWnd {
+    DECLARE_DYNCREATE(CMainFrame);
+
+    // SYNTHETIC: HOVER 0x41d600
+    // CMainFrame::Construct
+
+    // SYNTHETIC: HOVER 0x41dfd0
+    // CMainFrame::`scalar deleting destructor`
+
+    // SYNTHETIC: HOVER 0x426a50
+    // CMainFrame::GetRuntimeClass
+};
 
 class CMapEraserPod : public CObject {};
 

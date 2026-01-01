@@ -1,13 +1,13 @@
 #include "merlin.h"
 
-IMPLEMENT_DYNCREATE(CMerlinObject, CObject)
-IMPLEMENT_DYNCREATE(CMerlinLine, CMerlinObject)
-IMPLEMENT_DYNCREATE(CMerlinBSP, CMerlinLine)
-IMPLEMENT_DYNCREATE(CMerlinDynamic, CMerlinLine)
-IMPLEMENT_DYNCREATE(CMerlinLocation, CMerlinObject)
-IMPLEMENT_DYNCREATE(CMerlinStatic, CMerlinLine)
-IMPLEMENT_DYNCREATE(CMerlinTexture, CMerlinObject)
-IMPLEMENT_DYNCREATE(CMerlinWorld, CObject)
+IMPLEMENT_SERIAL(CMerlinObject, CObject, 1)
+IMPLEMENT_SERIAL(CMerlinLine, CMerlinObject, 1)
+IMPLEMENT_SERIAL(CMerlinBSP, CMerlinLine, 1)
+IMPLEMENT_SERIAL(CMerlinDynamic, CMerlinLine, 1)
+IMPLEMENT_SERIAL(CMerlinLocation, CMerlinObject, 1)
+IMPLEMENT_SERIAL(CMerlinStatic, CMerlinLine, 1)
+IMPLEMENT_SERIAL(CMerlinTexture, CMerlinObject, 1)
+IMPLEMENT_SERIAL(CMerlinWorld, CObject, 1)
 
 // FUNCTION: HOVER 0x401030
 CMerlinObject::CMerlinObject()
