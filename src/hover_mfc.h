@@ -3,8 +3,60 @@
 
 #include "stdafx.h"
 
+// superclass for others.
+class CGameObj : public CObject {
+    DECLARE_DYNAMIC(CGameObj);
+
+    // SYNTHETIC: HOVER 0x42ad00
+    // CGameObj::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c52c0
+    // classCGameObj
+};
+
+// VTABLE: HOVER 0x4bc910
+class CPlayer : public CGameObj {
+    DECLARE_DYNAMIC(CPlayer);
+
+    // SYNTHETIC: HOVER 0x42b8d0
+    // CPlayer::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c53f8
+    // classCPlayer
+};
+
+// VTABLE: HOVER 0x4bc500
+class CPodObj : public CGameObj {
+    DECLARE_DYNAMIC(CPodObj);
+
+    // SYNTHETIC: HOVER 0x42aec0
+    // CPodObj::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c5318
+    // classCPodObj
+};
+
+// VTABLE: HOVER 0x4bc7f0
+class CFloorObj : public CGameObj {
+    DECLARE_DYNAMIC(CFloorObj);
+
+    // SYNTHETIC: HOVER 0x4011f0
+    // CFloorObj::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c53c8
+    // classCFloorObj
+};
+
 // VTABLE: HOVER 0x4be698
-class CBeacon : public CObject {};
+class CBeacon : public CGameObj {
+    DECLARE_DYNAMIC(CBeacon);
+
+    // SYNTHETIC: HOVER 0x40bc40
+    // CBeacon::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c5790
+    // classCBeacon
+};
 
 // VTABLE: HOVER 0x4bae10
 class CBumperDoc : public CDocument {
@@ -62,29 +114,59 @@ public:
 };
 
 // VTABLE: HOVER 0x4bca88
-class CContainer : public CObject {};
+class CContainer : public CPodObj {
+    DECLARE_DYNAMIC(CContainer);
+
+    // GLOBAL: HOVER 0x4c5438
+    // classCContainer
+};
 
 // VTABLE: HOVER 0x4bc9f0
-class CFlag : public CObject {};
+class CFlag : public CPodObj {
+    DECLARE_DYNAMIC(CFlag);
+
+    // GLOBAL: HOVER 0x4c5418
+    // classCFlag
+};
 
 // VTABLE: HOVER 0x4bcf40
-class CFlagRemover : public CObject {};
+class CFlagRemover : public CFloorObj {
+    DECLARE_DYNAMIC(CFlagRemover);
 
-// VTABLE: HOVER 0x4bc7f0
-class CFloorObj : public CObject {};
-
-// superclass for others.
-class CGameObj : public CObject {};
+    // GLOBAL: HOVER 0x4c5548
+    // classCFlagRemover
+};
 
 // VTABLE: HOVER 0x4bcb48
-class CHoldPad : public CObject {};
+class CHoldPad : public CFloorObj {
+    DECLARE_DYNAMIC(CHoldPad);
 
-class CHumanPlayer : public CObject {};
+    // GLOBAL: HOVER 0x4c5460
+    // classCHoldPad
+};
 
-class CInviciblePod : public CObject {};
+// VTABLE: HOVER 0x4bcbe0
+class CHumanPlayer : public CPlayer {
+    DECLARE_DYNAMIC(CHumanPlayer);
+
+    // GLOBAL: HOVER 0x4c5488
+    // classCHumanPlayer
+};
+
+class CInviciblePod : public CPodObj {
+    DECLARE_DYNAMIC(CInviciblePod);
+
+    // GLOBAL: HOVER 0x4c52f0
+    // classCInvinciblePod
+};
 
 // VTABLE: HOVER 0x4bc2c0
-class CJumpPod : public CObject {};
+class CJumpPod : public CPodObj {
+    DECLARE_DYNAMIC(CJumpPod);
+
+    // GLOBAL: HOVER 0x4c5298
+    // classCJumpPod
+};
 
 // VTABLE: HOVER 0x4bab30
 class CMainFrame : public CFrameWnd {
@@ -100,30 +182,77 @@ class CMainFrame : public CFrameWnd {
     // CMainFrame::GetRuntimeClass
 };
 
-class CMapEraserPod : public CObject {};
+class CMapEraserPod : public CPodObj {
+    DECLARE_DYNAMIC(CMapEraserPod);
 
-class CMixit : public CObject {};
+    // GLOBAL: HOVER 0x4c54f8
+    // classCMapEraserPod
+};
 
-class CPlayer : public CObject {};
+// VTABLE: HOVER 0x4bd078
+class CRegionMatrix : public CObject {
+    DECLARE_DYNAMIC(CRegionMatrix);
 
-class CPodObj : public CObject {};
+    // GLOBAL: HOVER 0x4c55b8
+    // classCRegionMatrix
+};
 
-class CRegionMatrix : public CObject {};
+// VTABLE: HOVER 0x4bcce0
+class CRobotPlayer : public CPlayer {
+    DECLARE_DYNAMIC(CRobotPlayer);
 
-class CRobotPlayer : public CObject {};
+    // GLOBAL: HOVER 0x4c54b8
+    // classCRobotPlayer
+};
 
 // VTABLE: HOVER 0x4bc750
-class CSledPad : public CObject {};
+class CSledPad : public CFloorObj {
+    DECLARE_DYNAMIC(CSledPad);
 
-class CSlowPod : public CObject {};
+    // GLOBAL: HOVER 0x4c53a0
+    // classCSledPad
+};
 
-class CSmokeBombPod : public CObject {};
+// VTABLE: HOVER 0x4bce80
+class CSlowPod : public CPodObj {
+    DECLARE_DYNAMIC(CSlowPod);
 
-class CSpeedPod : public CObject {};
+    // GLOBAL: HOVER 0x4c5520
+    // classCSlowPod
+};
 
-class CTempWallPod : public CObject {};
+// VTABLE: HOVER 0x4bc1f0
+class CSmokeBombPod : public CPodObj {
+    DECLARE_DYNAMIC(CSmokeBombPod);
+
+    // GLOBAL: HOVER 0x4c5270
+    // classCSmokeBombPod
+};
+
+// VTABLE: HOVER 0x4bc690
+class CSpeedPod : public CPodObj {
+    DECLARE_DYNAMIC(CSpeedPod);
+
+    // GLOBAL: HOVER 0x4c5378
+    // classCSpeedPod
+};
+
+class CTempWallPod : public CPodObj {
+    DECLARE_DYNAMIC(CTempWallPod);
+
+    // GLOBAL: HOVER 0x4c5340
+    // classCTempWallPod
+};
 
 // VTABLE: HOVER 0x4bcfd8
-class CWall : public CObject {};
+class CWall : public CGameObj {
+    DECLARE_DYNAMIC(CWall);
+
+    // SYNTHETIC: HOVER 0x4011d0
+    // CWall::GetRuntimeClass
+
+    // GLOBAL: HOVER 0x4c5570
+    // classCWall
+};
 
 #endif // HOVER_MFC_H
