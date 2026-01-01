@@ -122,6 +122,8 @@ void CHoverApp::OnAppAbout()
     CMerlinStatic *merlinStatic = new CMerlinStatic();
     CMerlinTexture *merlinTexture = new CMerlinTexture();
     CMerlinWorld *merlinWorld = new CMerlinWorld();
+
+    CMapStringToOb *mapStr = new CMapStringToOb();
 }
 
 // STUB: HOVER 0x425730

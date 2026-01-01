@@ -25,12 +25,15 @@ CMerlinLine::CMerlinLine()
     m_unk0x14 = 0;
 }
 
-// STUB: HOVER 0x411b10
+// FUNCTION: HOVER 0x411b10
 void CMerlinObject::Serialize(CArchive& ar)
 {
-    // TODO
     if (ar.IsStoring()) {
-
+        ar << m_string;
+        ar.Flush();
+        // TODO
+    } else {
+        ar >> m_string;
     }
 }
 
