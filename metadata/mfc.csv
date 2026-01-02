@@ -103,7 +103,7 @@ address,type,symbol
 44b9ac,function,?AllocBuffer@CString@@IAEXH@Z
 44b9de,function,?Empty@CString@@QAEXXZ
 44b9f4,function,??1CString@@QAE@XZ
-44ba3f,function,??4CString@@QAEABV0@D@Z
+44ba3f,function,??0CString@@QAE@PBD@Z
 44baa6,function,?AssignCopy@CString@@IAEXHPBD@Z
 44bae3,function,??4CString@@QAEABV0@ABV0@@Z
 44bafa,function,??4CString@@QAEABV0@PBD@Z
