@@ -3,8 +3,12 @@
 
 #include "stdafx.h"
 
-// superclass for others.
+// VTABLE: HOVER 0x4be148
+// SIZE 0x84
 class CGameObj : public CObject {
+    // DECOMP: This may not be the correct vtable addr.
+    // There are 9 tables with the same call to GetRuntimeClass, which
+    // means 8 of them extend CGameObj but do not use DECLARE_DYNAMIC.
     DECLARE_DYNAMIC(CGameObj);
 
     // SYNTHETIC: HOVER 0x42ad00
@@ -12,9 +16,13 @@ class CGameObj : public CObject {
 
     // GLOBAL: HOVER 0x4c52c0
     // classCGameObj
+
+protected:
+    char padding[128];  // 0x04
 };
 
 // VTABLE: HOVER 0x4bc910
+// SIZE 0x1fc
 class CPlayer : public CGameObj {
     DECLARE_DYNAMIC(CPlayer);
 
@@ -23,9 +31,12 @@ class CPlayer : public CGameObj {
 
     // GLOBAL: HOVER 0x4c53f8
     // classCPlayer
+protected:
+    char padding[376];  // 0x84
 };
 
 // VTABLE: HOVER 0x4bc500
+// SIZE 0x100
 class CPodObj : public CGameObj {
     DECLARE_DYNAMIC(CPodObj);
 
@@ -34,9 +45,12 @@ class CPodObj : public CGameObj {
 
     // GLOBAL: HOVER 0x4c5318
     // classCPodObj
+protected:
+    char padding[124];  // 0x84
 };
 
 // VTABLE: HOVER 0x4bc7f0
+// SIZE 0xb8
 class CFloorObj : public CGameObj {
     DECLARE_DYNAMIC(CFloorObj);
 
@@ -45,9 +59,12 @@ class CFloorObj : public CGameObj {
 
     // GLOBAL: HOVER 0x4c53c8
     // classCFloorObj
+protected:
+    char padding[52];   // 0x84
 };
 
 // VTABLE: HOVER 0x4be698
+// SIZE 0xb0
 class CBeacon : public CGameObj {
     DECLARE_DYNAMIC(CBeacon);
 
@@ -56,9 +73,12 @@ class CBeacon : public CGameObj {
 
     // GLOBAL: HOVER 0x4c5790
     // classCBeacon
+protected:
+    char padding[44];   // 0x84
 };
 
 // VTABLE: HOVER 0x4bae10
+// SIZE 0x84a0
 class CBumperDoc : public CDocument {
     DECLARE_DYNCREATE(CBumperDoc);
 public:
@@ -77,9 +97,12 @@ public:
 
     // SYNTHETIC: HOVER 0x426e80
     // CBumperDoc::GetRuntimeClass
+protected:
+    char padding[33856];    // 0x60
 };
 
 // VTABLE: HOVER 0x4bb6d0
+// SIZE 0x55c
 class CBumperView : public CView {
     DECLARE_DYNCREATE(CBumperView);
 public:
@@ -96,9 +119,12 @@ public:
 
     // GLOBAL: HOVER 0x4c4cb0
     // classCBumperView
+protected:
+    char padding[1320];     // 0x34
 };
 
 // VTABLE: HOVER 0x4bd100
+// SIZE 0x5c
 class CCollider : public CObject {
     DECLARE_DYNAMIC(CCollider);
 public:
@@ -111,9 +137,12 @@ public:
 
     // GLOBAL: HOVER 0x4c55a0
     // classCCollider
+protected:
+    char padding[88];   // 0x04
 };
 
 // VTABLE: HOVER 0x4bca88
+// SIZE 0x100
 class CContainer : public CPodObj {
     DECLARE_DYNAMIC(CContainer);
 
@@ -122,6 +151,7 @@ class CContainer : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bc9f0
+// SIZE 0x100
 class CFlag : public CPodObj {
     DECLARE_DYNAMIC(CFlag);
 
@@ -130,6 +160,7 @@ class CFlag : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bcf40
+// SIZE 0xb8
 class CFlagRemover : public CFloorObj {
     DECLARE_DYNAMIC(CFlagRemover);
 
@@ -138,6 +169,7 @@ class CFlagRemover : public CFloorObj {
 };
 
 // VTABLE: HOVER 0x4bcb48
+// SIZE 0xb8
 class CHoldPad : public CFloorObj {
     DECLARE_DYNAMIC(CHoldPad);
 
@@ -146,6 +178,7 @@ class CHoldPad : public CFloorObj {
 };
 
 // VTABLE: HOVER 0x4bcbe0
+// SIZE 0x1fc
 class CHumanPlayer : public CPlayer {
     DECLARE_DYNAMIC(CHumanPlayer);
 
@@ -153,6 +186,8 @@ class CHumanPlayer : public CPlayer {
     // classCHumanPlayer
 };
 
+// VTABLE: HOVER 0x4bc440
+// SIZE 0x100
 class CInviciblePod : public CPodObj {
     DECLARE_DYNAMIC(CInviciblePod);
 
@@ -161,6 +196,7 @@ class CInviciblePod : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bc2c0
+// SIZE 0x100
 class CJumpPod : public CPodObj {
     DECLARE_DYNAMIC(CJumpPod);
 
@@ -169,6 +205,7 @@ class CJumpPod : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bab30
+// SIZE 0x158
 class CMainFrame : public CFrameWnd {
     DECLARE_DYNCREATE(CMainFrame);
 
@@ -180,8 +217,12 @@ class CMainFrame : public CFrameWnd {
 
     // SYNTHETIC: HOVER 0x426a50
     // CMainFrame::GetRuntimeClass
+protected:
+    char padding[152];
 };
 
+// VTABLE: HOVER 0x4bcdc0
+// SIZE 0x100
 class CMapEraserPod : public CPodObj {
     DECLARE_DYNAMIC(CMapEraserPod);
 
@@ -190,22 +231,29 @@ class CMapEraserPod : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bd078
+// SIZE 0x18
 class CRegionMatrix : public CObject {
     DECLARE_DYNAMIC(CRegionMatrix);
 
     // GLOBAL: HOVER 0x4c55b8
     // classCRegionMatrix
+protected:
+    char padding[20];
 };
 
 // VTABLE: HOVER 0x4bcce0
+// SIZE 0x688
 class CRobotPlayer : public CPlayer {
     DECLARE_DYNAMIC(CRobotPlayer);
 
     // GLOBAL: HOVER 0x4c54b8
     // classCRobotPlayer
+protected:
+    char padding[1164];
 };
 
 // VTABLE: HOVER 0x4bc750
+// SIZE 0xb8
 class CSledPad : public CFloorObj {
     DECLARE_DYNAMIC(CSledPad);
 
@@ -214,6 +262,7 @@ class CSledPad : public CFloorObj {
 };
 
 // VTABLE: HOVER 0x4bce80
+// SIZE 0x100
 class CSlowPod : public CPodObj {
     DECLARE_DYNAMIC(CSlowPod);
 
@@ -222,6 +271,7 @@ class CSlowPod : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bc1f0
+// SIZE 0x100
 class CSmokeBombPod : public CPodObj {
     DECLARE_DYNAMIC(CSmokeBombPod);
 
@@ -230,6 +280,7 @@ class CSmokeBombPod : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bc690
+// SIZE 0x100
 class CSpeedPod : public CPodObj {
     DECLARE_DYNAMIC(CSpeedPod);
 
@@ -237,6 +288,8 @@ class CSpeedPod : public CPodObj {
     // classCSpeedPod
 };
 
+// VTABLE: HOVER 0x4bc5c0
+// SIZE 0x100
 class CTempWallPod : public CPodObj {
     DECLARE_DYNAMIC(CTempWallPod);
 
@@ -245,6 +298,7 @@ class CTempWallPod : public CPodObj {
 };
 
 // VTABLE: HOVER 0x4bcfd8
+// SIZE 0xa0
 class CWall : public CGameObj {
     DECLARE_DYNAMIC(CWall);
 
@@ -253,6 +307,8 @@ class CWall : public CGameObj {
 
     // GLOBAL: HOVER 0x4c5570
     // classCWall
+protected:
+    char padding[28];
 };
 
 #endif // HOVER_MFC_H
