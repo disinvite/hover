@@ -1,2 +1,6 @@
 address,type,name
+44c3ac,function,afxMapHWND
+44e5bd,function,afxMapHMENU
+450774,function,afxMapHDC
+45128b,function,afxMapHGDIOBJ
 4526af,function,ReadStringLength

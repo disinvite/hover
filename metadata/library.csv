@@ -6,3 +6,5 @@ address,type,symbol
 440020,library,_memset
 4403c0,library,_memcpy
 440510,library,_strlen
+4406cc,library,_free
+44104e,library,_malloc
