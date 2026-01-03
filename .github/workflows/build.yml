@@ -1,0 +1,89 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  fetch-deps:
+    name: Download original binaries
+    uses: ./.github/workflows/download.yml
+
+  build:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install MSVC 4.20
+        uses: actions/checkout@v4
+        with:
+          repository: itsmattkc/msvc420
+          path: msvc420
+
+      - name: Install MSVC 2.0 MFC
+        uses: actions/checkout@v4
+        with:
+          repository: joncampbell123/windows_sdk_collection
+          sparse-checkout: win/win32snt3.msvc20/files/mfc
+          path: mfc20
+
+      - name: Build
+        shell: cmd
+        run: |
+          call .\msvc420\bin\VCVARS32.BAT x86
+          set LIB=%LIB%;%cd%\mfc20\lib
+          set INCLUDE=%INCLUDE%;%cd%\mfc20\include
+          cmake -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -G "NMake Makefiles"
+          cmake --build build
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: Win32
+          path: |
+            build/HOVER.EXE
+            build/HOVER.PDB
+
+  verify:
+    name: Verify decomp
+    needs: [build, fetch-deps]
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@main
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - uses: actions/download-artifact@main
+      with:
+       name: Win32
+       path: build
+
+    - name: Restore cached original binaries
+      id: cache-original-binaries
+      uses: actions/cache/restore@v4
+      with:
+        enableCrossOsArchive: true
+        path: original
+        key: hover
+
+    - name: Install python packages
+      shell: bash
+      run: |
+        pip install git+https://github.com/isledecomp/reccmp.git
+
+    - name: Detect binaries
+      run: |
+        reccmp-project detect --what original   --search-path original
+        reccmp-project detect --what recompiled --search-path build
+
+    - name: Summarize Accuracy
+      run: |
+        reccmp-reccmp --target HOVER --html hover.html
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@main
+      with:
+        name: Accuracy
+        path: |
+          hover.html

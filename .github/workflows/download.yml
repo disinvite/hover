@@ -1,0 +1,28 @@
+name: Download originals
+
+on:
+  workflow_call:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Restore original binaries
+      id: cache
+      uses: actions/cache@v3
+      with:
+        path: original
+        key: hover
+
+    - name: Download original binaries
+      if: ${{ !steps.cache.outputs.cache-hit }}
+      run: |
+        wget https://archive.org/download/hoverwindows95/hover.zip
+        unzip hover.zip
+        mkdir original
+        cp ./HOVER!/HOVER.EXE original
+
+    - name: Verify files
+      run: |
+        echo "e49b284bed8773bc2a14f4977d1be4ce5eedd1df79896e7b556e7eb538e2f09a original/HOVER.EXE" | sha256sum --check
