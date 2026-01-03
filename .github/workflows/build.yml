@@ -36,7 +36,7 @@ jobs:
         shell: cmd
         run: |
           set MSVC_DIR=%cd%\msvc420
-          set MFC_DIR=%cd%\win\win32snt3.msvc20\files\mfc
+          set MFC_DIR=%cd%\mfc20\win\win32snt3.msvc20\files\mfc
           set PATH=%MSVC_DIR%\bin;%PATH%
           set LIB=%MSVC_DIR%\lib;%MFC_DIR%\lib;%LIB%
           set INCLUDE=%MSVC_DIR%\include;%MFC_DIR%\include;%INCLUDE%
