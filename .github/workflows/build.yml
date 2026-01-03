@@ -35,7 +35,7 @@ jobs:
       - name: Build
         shell: cmd
         run: |
-          set PATH=%cd\msvc420\bin;%PATH%
+          set PATH=%cd%\msvc420\bin;%PATH%
           set LIB=%cd%\msvc420\lib;%cd%\mfc20\lib;%LIB%
           set INCLUDE=%cd%\msvc420\lib;%cd%\mfc20\include;%INCLUDE%
           cmake -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -G "NMake Makefiles"
