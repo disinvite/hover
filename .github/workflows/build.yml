@@ -26,6 +26,12 @@ jobs:
           sparse-checkout: win/win32snt3.msvc20/files/mfc
           path: mfc20
 
+      - name: Setup cmake
+        uses: jwlawson/actions-setup-cmake@v2
+        with:
+          # Use minimum supported version
+          cmake-version: '3.15.x'
+
       - name: Build
         shell: cmd
         run: |
