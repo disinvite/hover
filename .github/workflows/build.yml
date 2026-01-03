@@ -36,8 +36,8 @@ jobs:
         shell: cmd
         run: |
           call .\msvc420\bin\VCVARS32.BAT x86
-          set LIB=%LIB%;%cd%\mfc20\lib
-          set INCLUDE=%INCLUDE%;%cd%\mfc20\include
+          set LIB=%cd%\mfc20\lib;%LIB%
+          set INCLUDE=%cd%\mfc20\include;%INCLUDE%
           cmake -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -G "NMake Makefiles"
           cmake --build build
 
