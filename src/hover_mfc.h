@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 
-// VTABLE: HOVER 0x4be148
+// VTABLE: HOVER 0x4bc380
 // SIZE 0x84
 class CGameObj : public CObject {
     // DECOMP: This may not be the correct vtable addr.
@@ -11,8 +11,18 @@ class CGameObj : public CObject {
     // means 8 of them extend CGameObj but do not use DECLARE_DYNAMIC.
     DECLARE_DYNAMIC(CGameObj);
 
+public:
+    // FUNCTION: HOVER 0x40d220
+    virtual ~CGameObj() {}
+
+    // SYNTHETIC: HOVER 0x423670
+    // CGameObj::CGameObj
+
     // SYNTHETIC: HOVER 0x42ad00
     // CGameObj::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x42adb0
+    // CGameObj::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c52c0
     // classCGameObj
@@ -25,9 +35,15 @@ protected:
 // SIZE 0x1fc
 class CPlayer : public CGameObj {
     DECLARE_DYNAMIC(CPlayer);
+public:
+    // FUNCTION: HOVER 0x421a90
+    virtual ~CPlayer() {};
 
     // SYNTHETIC: HOVER 0x42b8d0
     // CPlayer::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x42c080
+    // CPlayer::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c53f8
     // classCPlayer
@@ -39,9 +55,15 @@ protected:
 // SIZE 0x100
 class CPodObj : public CGameObj {
     DECLARE_DYNAMIC(CPodObj);
+public:
+    // FUNCTION: HOVER 0x411580
+    virtual ~CPodObj() {}
 
     // SYNTHETIC: HOVER 0x42aec0
     // CPodObj::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x42b000
+    // CPodObj::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5318
     // classCPodObj
@@ -53,9 +75,15 @@ protected:
 // SIZE 0xb8
 class CFloorObj : public CGameObj {
     DECLARE_DYNAMIC(CFloorObj);
+public:
+    // FUNCTION: HOVER 0x421890
+    virtual ~CFloorObj() {};
 
     // SYNTHETIC: HOVER 0x4011f0
     // CFloorObj::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x4219d0
+    // CFloorObj::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c53c8
     // classCFloorObj
@@ -67,9 +95,14 @@ protected:
 // SIZE 0xb0
 class CBeacon : public CGameObj {
     DECLARE_DYNAMIC(CBeacon);
+public:
+    virtual ~CBeacon() {};
 
     // SYNTHETIC: HOVER 0x40bc40
     // CBeacon::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x424180
+    // CBeacon::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5790
     // classCBeacon
@@ -82,7 +115,6 @@ protected:
 class CBumperDoc : public CDocument {
     DECLARE_DYNCREATE(CBumperDoc);
 public:
-
     // FUNCTION: HOVER 0x426f10
     virtual void Serialize(CArchive& ar) {};
 
@@ -128,6 +160,7 @@ protected:
 class CCollider : public CObject {
     DECLARE_DYNAMIC(CCollider);
 public:
+    virtual ~CCollider() {};
 
     // SYNTHETIC: HOVER 0x41b6c0
     // CCollider::`scalar deleting destructor'
@@ -145,6 +178,14 @@ protected:
 // SIZE 0x100
 class CContainer : public CPodObj {
     DECLARE_DYNAMIC(CContainer);
+public:
+    virtual ~CContainer() {};
+
+    // SYNTHETIC: HOVER 0x4038c0
+    // CContainer::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x41b230
+    // CContainer::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5438
     // classCContainer
@@ -154,6 +195,14 @@ class CContainer : public CPodObj {
 // SIZE 0x100
 class CFlag : public CPodObj {
     DECLARE_DYNAMIC(CFlag);
+public:
+    virtual ~CFlag() {};
+
+    // SYNTHETIC: HOVER 0x4014d0
+    // CFlag::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x421db0
+    // CFlag::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5418
     // classCFlag
@@ -163,6 +212,14 @@ class CFlag : public CPodObj {
 // SIZE 0xb8
 class CFlagRemover : public CFloorObj {
     DECLARE_DYNAMIC(CFlagRemover);
+public:
+    virtual ~CFlagRemover() {};
+
+    // SYNTHETIC: HOVER 0x401510
+    // CFlagRemover::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x422b20
+    // CFlagRemover::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5548
     // classCFlagRemover
@@ -172,6 +229,14 @@ class CFlagRemover : public CFloorObj {
 // SIZE 0xb8
 class CHoldPad : public CFloorObj {
     DECLARE_DYNAMIC(CHoldPad);
+public:
+    virtual ~CHoldPad() {};
+
+    // SYNTHETIC: HOVER 0x401200
+    // CHoldPad::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x421f30
+    // CHoldPad::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5460
     // classCHoldPad
@@ -181,6 +246,14 @@ class CHoldPad : public CFloorObj {
 // SIZE 0x1fc
 class CHumanPlayer : public CPlayer {
     DECLARE_DYNAMIC(CHumanPlayer);
+public:
+    virtual ~CHumanPlayer() {};
+
+    // SYNTHETIC: HOVER 0x4014e0
+    // CHumanPlayer::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x42c260
+    // CHumanPlayer::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5488
     // classCHumanPlayer
@@ -190,6 +263,14 @@ class CHumanPlayer : public CPlayer {
 // SIZE 0x100
 class CInviciblePod : public CPodObj {
     DECLARE_DYNAMIC(CInviciblePod);
+public:
+    virtual ~CInviciblePod() {};
+
+    // SYNTHETIC: HOVER 0x4014a0
+    // CInviciblePod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x4146c0
+    // CInviciblePod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c52f0
     // classCInviciblePod
@@ -199,6 +280,14 @@ class CInviciblePod : public CPodObj {
 // SIZE 0x100
 class CJumpPod : public CPodObj {
     DECLARE_DYNAMIC(CJumpPod);
+public:
+    virtual ~CJumpPod() {}
+
+    // SYNTHETIC: HOVER 0x401490
+    // CJumpPod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x4213c0
+    // CJumpPod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5298
     // classCJumpPod
@@ -208,6 +297,8 @@ class CJumpPod : public CPodObj {
 // SIZE 0x158
 class CMainFrame : public CFrameWnd {
     DECLARE_DYNCREATE(CMainFrame);
+public:
+    virtual ~CMainFrame() {}
 
     // SYNTHETIC: HOVER 0x41d600
     // CMainFrame::Construct
@@ -225,6 +316,14 @@ protected:
 // SIZE 0x100
 class CMapEraserPod : public CPodObj {
     DECLARE_DYNAMIC(CMapEraserPod);
+public:
+    virtual ~CMapEraserPod() {}
+
+    // SYNTHETIC: HOVER 0x4014f0
+    // CMapEraserPod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x41b350
+    // CMapEraserPod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c54f8
     // classCMapEraserPod
@@ -234,6 +333,14 @@ class CMapEraserPod : public CPodObj {
 // SIZE 0x18
 class CRegionMatrix : public CObject {
     DECLARE_DYNAMIC(CRegionMatrix);
+public:
+    virtual ~CRegionMatrix() {}
+
+    // SYNTHETIC: HOVER 0x42c6f0
+    // CRegionMatrix::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x42c7a0
+    // CRegionMatrix::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c55b8
     // classCRegionMatrix
@@ -245,6 +352,14 @@ protected:
 // SIZE 0x688
 class CRobotPlayer : public CPlayer {
     DECLARE_DYNAMIC(CRobotPlayer);
+public:
+    virtual ~CRobotPlayer() {}
+
+    // SYNTHETIC: HOVER 0x4038d0
+    // CRobotPlayer::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x422250
+    // CRobotPlayer::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c54b8
     // classCRobotPlayer
@@ -256,6 +371,14 @@ protected:
 // SIZE 0xb8
 class CSledPad : public CFloorObj {
     DECLARE_DYNAMIC(CSledPad);
+public:
+    virtual ~CSledPad() {}
+
+    // SYNTHETIC: HOVER 0x4011e0
+    // CSledPad::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x4217b0
+    // CSledPad::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c53a0
     // classCSledPad
@@ -265,6 +388,14 @@ class CSledPad : public CFloorObj {
 // SIZE 0x100
 class CSlowPod : public CPodObj {
     DECLARE_DYNAMIC(CSlowPod);
+public:
+    virtual ~CSlowPod() {}
+
+    // SYNTHETIC: HOVER 0x401500
+    // CSlowPod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x41b3e0
+    // CSlowPod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5520
     // classCSlowPod
@@ -274,6 +405,14 @@ class CSlowPod : public CPodObj {
 // SIZE 0x100
 class CSmokeBombPod : public CPodObj {
     DECLARE_DYNAMIC(CSmokeBombPod);
+public:
+    virtual ~CSmokeBombPod() {}
+
+    // SYNTHETIC: HOVER 0x401480
+    // CSmokeBombPod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x421290
+    // CSmokeBombPod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5270
     // classCSmokeBombPod
@@ -283,6 +422,14 @@ class CSmokeBombPod : public CPodObj {
 // SIZE 0x100
 class CSpeedPod : public CPodObj {
     DECLARE_DYNAMIC(CSpeedPod);
+public:
+    virtual ~CSpeedPod() {}
+
+    // SYNTHETIC: HOVER 0x4014c0
+    // CSpeedPod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x41a510
+    // CSpeedPod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5378
     // classCSpeedPod
@@ -292,6 +439,14 @@ class CSpeedPod : public CPodObj {
 // SIZE 0x100
 class CTempWallPod : public CPodObj {
     DECLARE_DYNAMIC(CTempWallPod);
+public:
+    virtual ~CTempWallPod() {}
+
+    // SYNTHETIC: HOVER 0x4014b0
+    // CTempWallPod::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x4215d0
+    // CTempWallPod::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5340
     // classCTempWallPod
@@ -301,9 +456,14 @@ class CTempWallPod : public CPodObj {
 // SIZE 0xa0
 class CWall : public CGameObj {
     DECLARE_DYNAMIC(CWall);
+public:
+    virtual ~CWall() {}
 
     // SYNTHETIC: HOVER 0x4011d0
     // CWall::GetRuntimeClass
+
+    // SYNTHETIC: HOVER 0x417ba0
+    // CWall::`scalar deleting destructor'
 
     // GLOBAL: HOVER 0x4c5570
     // classCWall

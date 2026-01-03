@@ -124,6 +124,32 @@ void CHoverApp::OnAppAbout()
     CMerlinWorld *merlinWorld = new CMerlinWorld();
 
     CMapStringToOb *mapStr = new CMapStringToOb();
+
+    CGameObj *gameObj = new CGameObj();
+    CPlayer *player = new CPlayer();
+    CPodObj *podObj = new CPodObj();
+    CFloorObj *floorObj = new CFloorObj();
+    CBeacon *beacon = new CBeacon();
+    CBumperDoc *bumperDoc = new CBumperDoc();
+    CBumperView *bumperView = new CBumperView();
+    CCollider *collider = new CCollider();
+    CContainer *container = new CContainer();
+    CFlag *flag = new CFlag();
+    CFlagRemover *flagRemover = new CFlagRemover();
+    CHoldPad *holdPad = new CHoldPad();
+    CHumanPlayer *humanPlayer = new CHumanPlayer();
+    CInviciblePod *inviciblePod = new CInviciblePod();
+    CJumpPod *jumpPod = new CJumpPod();
+    CMainFrame *mainFrame = new CMainFrame();
+    CMapEraserPod *mapEraserPod = new CMapEraserPod();
+    CRegionMatrix *regionMatrix = new CRegionMatrix();
+    CRobotPlayer *robotPlayer = new CRobotPlayer();
+    CSledPad *sledPad = new CSledPad();
+    CSlowPod *slowPod = new CSlowPod();
+    CSmokeBombPod *smokeBombPod = new CSmokeBombPod();
+    CSpeedPod *speedPod = new CSpeedPod();
+    CTempWallPod *tempWallPod = new CTempWallPod();
+    CWall *wall = new CWall();
 }
 
 // STUB: HOVER 0x425730

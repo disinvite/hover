@@ -225,6 +225,7 @@ address,type,symbol
 44fa51,function,?DeleteTemp@CHandleMap@@QAEXXZ
 4502d9,function,?OnAppExit@CWinApp@@IAEXXZ
 4502ec,function,?OpenDocumentFile@CWinApp@@UAEPAVCDocument@@PBD@Z
+450439,function,??1CSingleDocTemplate@@UAE@XZ
 45070f,function,??0CDC@@QAE@XZ
 4507d2,function,?DeleteTempMap@CDC@@SGXXZ
 4507e8,function,?FromHandle@CDC@@SGPAV1@PAUHDC__@@@Z
@@ -334,6 +335,7 @@ address,type,symbol
 4535ad,function,?_AfxTlsAlloc@@YGKXZ
 4535da,function,?WriteObject@CArchive@@QAEXPBVCObject@@@Z
 453750,function,?ReadObject@CArchive@@QAEPAVCObject@@PBUCRuntimeClass@@@Z
+4539d0,function,??1CDocTemplate@@UAE@XZ
 4541b8,function,?DoPromptFileName@CWinApp@@QAEHAAVCString@@IKHPAVCDocTemplate@@@Z
 4544a4,function,?OnDDECommand@CWinApp@@UAEHPAD@Z
 454531,function,?SaveAllModified@CWinApp@@UAEHXZ
@@ -440,6 +442,8 @@ address,type,symbol
 45ccf4,function,??_GCWinThread@@UAEPAXI@Z
 45cdfd,function,?GetRuntimeClass@CCmdTarget@@UBEPAUCRuntimeClass@@XZ
 45ce08,function,??_GCCmdTarget@@UAEPAXI@Z
+45ce36,function,?GetRuntimeClass@CSingleDocTemplate@@UBEPAUCRuntimeClass@@XZ
+45ce41,function,??_GCSingleDocTemplate@@UAEPAXI@Z
 45ceca,function,?GetAppRegistryKey@CWinApp@@QAEPAUHKEY__@@XZ
 45cf7e,function,?GetSectionKey@CWinApp@@QAEPAUHKEY__@@PBD@Z
 45d30e,function,?Construct@CWnd@@SGXPAX@Z
@@ -538,6 +542,7 @@ address,type,symbol
 4c24d0,vtable,??_7CView@@6B@
 4c2610,vtable,??_7CPtrList@@6B@
 4c27f8,vtable,??_7CMapPtrToPtr@@6B@
+4c2ab0,vtable,??_7CDocTemplate@@6B@
 4c3098,vtable,??_7CPtrArray@@6B@
 4c4808,global,?classCMainFrame@CMainFrame@@2UCRuntimeClass@@A
 4c48d8,global,?classCBumperDoc@CBumperDoc@@2UCRuntimeClass@@A
@@ -548,6 +553,7 @@ address,type,symbol
 4c6930,global,?_dispatchEntryCount@CCmdTarget@@0IA
 4c6938,global,?classCCmdTarget@CCmdTarget@@2UCRuntimeClass@@A
 4c695c,global,?afxChNil@@3DA
+4c6960,global,?classCSingleDocTemplate@CSingleDocTemplate@@2UCRuntimeClass@@A
 4c6998,global,?classCWnd@CWnd@@2UCRuntimeClass@@A
 4c6a20,global,?classCObject@CObject@@2UCRuntimeClass@@A
 4c6a58,global,?classCUserException@CUserException@@2UCRuntimeClass@@A
@@ -568,4 +574,5 @@ address,type,symbol
 4c7238,global,?classCPtrList@CPtrList@@2UCRuntimeClass@@A
 4c7268,global,?classCMapPtrToPtr@CMapPtrToPtr@@2UCRuntimeClass@@A
 4c7290,global,?_afxThreadTlsIndex@@3KA
+4c72f0,global,?classCDocTemplate@CDocTemplate@@2UCRuntimeClass@@A
 4c7330,global,?classCPtrArray@CPtrArray@@2UCRuntimeClass@@A
