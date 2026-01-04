@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 
-#include "CFloorObj.h"
 #include "CGameObj.h"
 #include "CPlayer.h"
 #include "CPodObj.h"
@@ -42,23 +41,6 @@ public:
 
     // GLOBAL: HOVER 0x4c5438
     // classCContainer
-};
-
-// VTABLE: HOVER 0x4bcb48
-// SIZE 0xb8
-class CHoldPad : public CFloorObj {
-    DECLARE_DYNAMIC(CHoldPad);
-public:
-    virtual ~CHoldPad() {};
-
-    // SYNTHETIC: HOVER 0x401200
-    // CHoldPad::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x421f30
-    // CHoldPad::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5460
-    // classCHoldPad
 };
 
 // VTABLE: HOVER 0x4bcbe0
@@ -131,23 +113,6 @@ public:
     // classCRobotPlayer
 protected:
     char padding[1164];
-};
-
-// VTABLE: HOVER 0x4bc750
-// SIZE 0xb8
-class CSledPad : public CFloorObj {
-    DECLARE_DYNAMIC(CSledPad);
-public:
-    virtual ~CSledPad() {}
-
-    // SYNTHETIC: HOVER 0x4011e0
-    // CSledPad::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x4217b0
-    // CSledPad::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c53a0
-    // classCSledPad
 };
 
 // VTABLE: HOVER 0x4bc1f0

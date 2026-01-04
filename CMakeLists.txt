@@ -15,10 +15,12 @@ add_executable(hover WIN32
     src/CFlagRemover.cpp
     src/CFloorObj.cpp
     src/CGameObj.cpp
+    src/CHoldPad.cpp
     src/CInviciblePod.cpp
     src/CJumpPod.cpp
     src/CPlayer.cpp
     src/CPodObj.cpp
+    src/CSledPad.cpp
     src/CSlowPod.cpp
     src/merlin.cpp
     src/hover_mfc.cpp
