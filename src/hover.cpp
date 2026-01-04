@@ -3,6 +3,8 @@
 #include "CBeacon.h"
 #include "CBumperDoc.h"
 #include "CBumperView.h"
+#include "CFlag.h"
+#include "CFlagRemover.h"
 #include "CFloorObj.h"
 #include "CGameObj.h"
 #include "CInviciblePod.h"

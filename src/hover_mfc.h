@@ -44,40 +44,6 @@ public:
     // classCContainer
 };
 
-// VTABLE: HOVER 0x4bc9f0
-// SIZE 0x100
-class CFlag : public CPodObj {
-    DECLARE_DYNAMIC(CFlag);
-public:
-    virtual ~CFlag() {};
-
-    // SYNTHETIC: HOVER 0x4014d0
-    // CFlag::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x421db0
-    // CFlag::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5418
-    // classCFlag
-};
-
-// VTABLE: HOVER 0x4bcf40
-// SIZE 0xb8
-class CFlagRemover : public CFloorObj {
-    DECLARE_DYNAMIC(CFlagRemover);
-public:
-    virtual ~CFlagRemover() {};
-
-    // SYNTHETIC: HOVER 0x401510
-    // CFlagRemover::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x422b20
-    // CFlagRemover::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5548
-    // classCFlagRemover
-};
-
 // VTABLE: HOVER 0x4bcb48
 // SIZE 0xb8
 class CHoldPad : public CFloorObj {
