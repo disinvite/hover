@@ -11,6 +11,7 @@ add_executable(hover WIN32
     src/CBumperView.cpp
     src/CMainFrame.cpp
     src/CGameObj.cpp
+    src/CPlayer.cpp
     src/CPodObj.cpp
     src/merlin.cpp
     src/hover_mfc.cpp

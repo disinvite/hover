@@ -4,6 +4,7 @@
 #include "CBumperView.h"
 #include "CMainFrame.h"
 #include "CGameObj.h"
+#include "CPlayer.h"
 #include "CPodObj.h"
 #include "hover_mfc.h"
 #include "merlin.h"

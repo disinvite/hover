@@ -4,27 +4,8 @@
 #include "stdafx.h"
 
 #include "CGameObj.h"
+#include "CPlayer.h"
 #include "CPodObj.h"
-
-// VTABLE: HOVER 0x4bc910
-// SIZE 0x1fc
-class CPlayer : public CGameObj {
-    DECLARE_DYNAMIC(CPlayer);
-public:
-    // FUNCTION: HOVER 0x421a90
-    virtual ~CPlayer() {};
-
-    // SYNTHETIC: HOVER 0x42b8d0
-    // CPlayer::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x42c080
-    // CPlayer::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c53f8
-    // classCPlayer
-protected:
-    char padding[376];  // 0x84
-};
 
 // VTABLE: HOVER 0x4bc7f0
 // SIZE 0xb8
