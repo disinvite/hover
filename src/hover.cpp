@@ -3,6 +3,8 @@
 #include "CBumperDoc.h"
 #include "CBumperView.h"
 #include "CMainFrame.h"
+#include "CGameObj.h"
+#include "CPodObj.h"
 #include "hover_mfc.h"
 #include "merlin.h"
 

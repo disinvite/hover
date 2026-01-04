@@ -3,33 +3,8 @@
 
 #include "stdafx.h"
 
-// VTABLE: HOVER 0x4bc380
-// SIZE 0x84
-class CGameObj : public CObject {
-    // DECOMP: This may not be the correct vtable addr.
-    // There are 9 tables with the same call to GetRuntimeClass, which
-    // means 8 of them extend CGameObj but do not use DECLARE_DYNAMIC.
-    DECLARE_DYNAMIC(CGameObj);
-
-public:
-    // FUNCTION: HOVER 0x40d220
-    virtual ~CGameObj() {}
-
-    // SYNTHETIC: HOVER 0x423670
-    // CGameObj::CGameObj
-
-    // SYNTHETIC: HOVER 0x42ad00
-    // CGameObj::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x42adb0
-    // CGameObj::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c52c0
-    // classCGameObj
-
-protected:
-    char padding[128];  // 0x04
-};
+#include "CGameObj.h"
+#include "CPodObj.h"
 
 // VTABLE: HOVER 0x4bc910
 // SIZE 0x1fc
@@ -49,26 +24,6 @@ public:
     // classCPlayer
 protected:
     char padding[376];  // 0x84
-};
-
-// VTABLE: HOVER 0x4bc500
-// SIZE 0x100
-class CPodObj : public CGameObj {
-    DECLARE_DYNAMIC(CPodObj);
-public:
-    // FUNCTION: HOVER 0x411580
-    virtual ~CPodObj() {}
-
-    // SYNTHETIC: HOVER 0x42aec0
-    // CPodObj::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x42b000
-    // CPodObj::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5318
-    // classCPodObj
-protected:
-    char padding[124];  // 0x84
 };
 
 // VTABLE: HOVER 0x4bc7f0
