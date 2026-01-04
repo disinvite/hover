@@ -13,3 +13,5 @@ address,type,name
 45128b,function,afxMapHGDIOBJ
 4526af,function,ReadStringLength
 4540b4,function,AppendFilterSuffix
+4572c5,function,AdjustRectangle
+45cd12,function,_AfxLoadDotBitmap

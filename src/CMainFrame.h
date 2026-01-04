@@ -8,7 +8,17 @@
 class CMainFrame : public CFrameWnd {
     DECLARE_DYNCREATE(CMainFrame)
 public:
-    virtual ~CMainFrame() {}
+    CMainFrame() {
+        m_unk0xc0 = 0;
+        m_library = 0;
+        m_unk0xc8 = 0;
+        m_unk0xd0 = 0;
+    }
+    virtual ~CMainFrame() {
+        if (m_library) {
+            ::FreeLibrary(m_library);
+        }
+    }
     virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
     virtual BOOL OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext);
 
@@ -53,7 +63,13 @@ protected:
     afx_msg LRESULT OnEnterSizeMove(WPARAM wParam, LPARAM lParam);
 
 
-    char padding[152];
+    DWORD m_unk0xc0;        // 0xc0
+    HMODULE m_library;      // 0xc4
+    DWORD m_unk0xc8;        // 0xc8
+    char padding[4];        // 0xca
+    DWORD m_unk0xd0;        // 0xd0
+    char padding2[16];      // 0xd4
+    CStatusBar m_statusBar; // 0xe4
 
     DECLARE_MESSAGE_MAP()
 };

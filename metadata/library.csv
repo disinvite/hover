@@ -3,12 +3,14 @@ address,type,symbol
 43e2cf,library,??2@YAPAXI@Z
 43e34a,library,??3@YAXPAX@Z
 43fd20,library,_memmove
+43ff5e,library,_atoi
 43ffe6,library,_wcslen
 440020,library,_memset
 440062,library,__mbschr
 44010e,library,__mbsnbcmp
 4403c0,library,_memcpy
 440510,library,_strlen
+44060c,library,__strdup
 440632,library,__mbsinc
 4406cc,library,_free
 440755,library,__strupr
