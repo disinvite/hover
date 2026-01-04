@@ -14,6 +14,12 @@ void CGameObj::VTable0x40()
     // TODO
 }
 
+// STUB: HOVER 0x411570
+void CGameObj::VTable0x34()
+{
+    // TODO
+}
+
 // STUB: HOVER 0x413020
 void CGameObj::VTable0x44()
 {
@@ -26,20 +32,14 @@ void CGameObj::VTable0x14()
     // TODO
 }
 
-// STUB: HOVER 0x42ad30
-void CGameObj::VTable0x1c()
-{
-    // TODO
-}
-
-// STUB: HOVER 0x411570
-void CGameObj::VTable0x34()
-{
-    // TODO
-}
-
 // STUB: HOVER 0x42ad10
 void CGameObj::VTable0x18()
+{
+    // TODO
+}
+
+// STUB: HOVER 0x42ad30
+void CGameObj::VTable0x1c()
 {
     // TODO
 }
