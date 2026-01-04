@@ -7,12 +7,16 @@ set(CMAKE_MFC_FLAG 1)
 include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/reccmp.cmake")
 
 add_executable(hover WIN32
+    src/CBeacon.cpp
     src/CBumperDoc.cpp
     src/CBumperView.cpp
     src/CMainFrame.cpp
     src/CGameObj.cpp
+    src/CInviciblePod.cpp
+    src/CJumpPod.cpp
     src/CPlayer.cpp
     src/CPodObj.cpp
+    src/CSlowPod.cpp
     src/merlin.cpp
     src/hover_mfc.cpp
     src/hover.cpp

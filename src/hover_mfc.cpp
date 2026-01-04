@@ -1,15 +1,11 @@
 #include "hover_mfc.h"
 
 IMPLEMENT_DYNAMIC(CFloorObj, CGameObj);
-IMPLEMENT_DYNAMIC(CBeacon, CGameObj);
 IMPLEMENT_DYNAMIC(CHumanPlayer, CPlayer);
 IMPLEMENT_DYNAMIC(CRobotPlayer, CPlayer);
 IMPLEMENT_DYNAMIC(CFlag, CPodObj);
 IMPLEMENT_DYNAMIC(CContainer, CPodObj);
-IMPLEMENT_DYNAMIC(CInviciblePod, CPodObj);
 IMPLEMENT_DYNAMIC(CMapEraserPod, CPodObj);
-IMPLEMENT_DYNAMIC(CJumpPod, CPodObj);
-IMPLEMENT_DYNAMIC(CSlowPod, CPodObj);
 IMPLEMENT_DYNAMIC(CFlagRemover, CFloorObj);
 IMPLEMENT_DYNAMIC(CSledPad, CFloorObj);
 IMPLEMENT_DYNAMIC(CHoldPad, CFloorObj);

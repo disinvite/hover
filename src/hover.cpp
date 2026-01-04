@@ -1,11 +1,15 @@
 #include "hover.h"
 
+#include "CBeacon.h"
 #include "CBumperDoc.h"
 #include "CBumperView.h"
 #include "CMainFrame.h"
 #include "CGameObj.h"
+#include "CInviciblePod.h"
+#include "CJumpPod.h"
 #include "CPlayer.h"
 #include "CPodObj.h"
+#include "CSlowPod.h"
 #include "hover_mfc.h"
 #include "merlin.h"
 

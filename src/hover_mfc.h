@@ -27,25 +27,6 @@ protected:
     char padding[52];   // 0x84
 };
 
-// VTABLE: HOVER 0x4be698
-// SIZE 0xb0
-class CBeacon : public CGameObj {
-    DECLARE_DYNAMIC(CBeacon);
-public:
-    virtual ~CBeacon() {};
-
-    // SYNTHETIC: HOVER 0x40bc40
-    // CBeacon::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x424180
-    // CBeacon::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5790
-    // classCBeacon
-protected:
-    char padding[44];   // 0x84
-};
-
 // VTABLE: HOVER 0x4bd100
 // SIZE 0x5c
 class CCollider : public CObject {
@@ -150,40 +131,6 @@ public:
     // classCHumanPlayer
 };
 
-// VTABLE: HOVER 0x4bc440
-// SIZE 0x100
-class CInviciblePod : public CPodObj {
-    DECLARE_DYNAMIC(CInviciblePod);
-public:
-    virtual ~CInviciblePod() {};
-
-    // SYNTHETIC: HOVER 0x4014a0
-    // CInviciblePod::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x4146c0
-    // CInviciblePod::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c52f0
-    // classCInviciblePod
-};
-
-// VTABLE: HOVER 0x4bc2c0
-// SIZE 0x100
-class CJumpPod : public CPodObj {
-    DECLARE_DYNAMIC(CJumpPod);
-public:
-    virtual ~CJumpPod() {}
-
-    // SYNTHETIC: HOVER 0x401490
-    // CJumpPod::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x4213c0
-    // CJumpPod::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5298
-    // classCJumpPod
-};
-
 // VTABLE: HOVER 0x4bcdc0
 // SIZE 0x100
 class CMapEraserPod : public CPodObj {
@@ -254,23 +201,6 @@ public:
 
     // GLOBAL: HOVER 0x4c53a0
     // classCSledPad
-};
-
-// VTABLE: HOVER 0x4bce80
-// SIZE 0x100
-class CSlowPod : public CPodObj {
-    DECLARE_DYNAMIC(CSlowPod);
-public:
-    virtual ~CSlowPod() {}
-
-    // SYNTHETIC: HOVER 0x401500
-    // CSlowPod::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x41b3e0
-    // CSlowPod::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c5520
-    // classCSlowPod
 };
 
 // VTABLE: HOVER 0x4bc1f0
