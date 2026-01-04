@@ -39,15 +39,15 @@ public:
 protected:
     DECLARE_MESSAGE_MAP()
 
-    afx_msg void OnCommand34002();
-    afx_msg void OnCommand34027();
-    afx_msg void OnCommand34026();
-    afx_msg void OnCommand34021();
-    afx_msg void OnCommand34028();
-    afx_msg void OnCommand34025();
-    afx_msg void OnCommand34024();
-    afx_msg void OnCommand34023();
-    afx_msg void OnCommand34022();
+    afx_msg void OnDebugSetNewPosition();
+    afx_msg void OnDebugDecGreen();
+    afx_msg void OnDebugIncGreen();
+    afx_msg void OnDebugDecBrightness();
+    afx_msg void OnDebugIncBrightness();
+    afx_msg void OnDebugDecBlue();
+    afx_msg void OnDebugIncBlue();
+    afx_msg void OnDebugDecRed();
+    afx_msg void OnDebugIncRed();
 
     char padding[33856];    // 0x60
 };
