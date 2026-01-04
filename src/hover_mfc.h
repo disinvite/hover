@@ -110,29 +110,6 @@ protected:
     char padding[44];   // 0x84
 };
 
-// VTABLE: HOVER 0x4bae10
-// SIZE 0x84a0
-class CBumperDoc : public CDocument {
-    DECLARE_DYNCREATE(CBumperDoc);
-public:
-    // FUNCTION: HOVER 0x426f10
-    virtual void Serialize(CArchive& ar) {};
-
-    // SYNTHETIC: HOVER 0x41e1d0
-    // CBumperDoc::Construct
-
-    // SYNTHETIC: HOVER 0x41e230
-    // CBumperDoc::CBumperDoc
-
-    // SYNTHETIC: HOVER 0x41e0d0
-    // CBumperDoc::`scalar deleting destructor'
-
-    // SYNTHETIC: HOVER 0x426e80
-    // CBumperDoc::GetRuntimeClass
-protected:
-    char padding[33856];    // 0x60
-};
-
 // VTABLE: HOVER 0x4bb6d0
 // SIZE 0x55c
 class CBumperView : public CView {

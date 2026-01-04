@@ -1,5 +1,6 @@
 #include "hover.h"
 
+#include "CBumperDoc.h"
 #include "CMainFrame.h"
 #include "hover_mfc.h"
 #include "merlin.h"
