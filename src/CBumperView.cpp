@@ -13,13 +13,13 @@ BEGIN_MESSAGE_MAP(CBumperView, CView)
     ON_COMMAND(34011, OnCommand34011)
     ON_UPDATE_COMMAND_UI(34011, OnUpdateCommand34011)
     ON_WM_ERASEBKGND()
-    ON_COMMAND(34014, OnCommand34014)
-    ON_COMMAND(34015, OnCommand34015)
-    ON_COMMAND(34013, OnCommand34013)
-    ON_COMMAND(34018, OnCommand34018)
-    ON_COMMAND(34019, OnCommand34019)
-    ON_COMMAND(34017, OnCommand34017)
-    ON_COMMAND(34016, OnCommand34016)
+    ON_COMMAND(34014, OnDebugGiveCloak)
+    ON_COMMAND(34015, OnDebugGiveWall)
+    ON_COMMAND(34013, OnDebugGiveJump)
+    ON_COMMAND(34018, OnDebugGiveShield)
+    ON_COMMAND(34019, OnDebugGiveMapEraser)
+    ON_COMMAND(34017, OnDebugGiveSpeed)
+    ON_COMMAND(34016, OnDebugGiveSlow)
     ON_COMMAND(32779, OnCommand32779)
     ON_UPDATE_COMMAND_UI(32779, OnUpdateCommand32779)
     ON_COMMAND(34005, OnCommand34005)
@@ -29,13 +29,13 @@ BEGIN_MESSAGE_MAP(CBumperView, CView)
     ON_UPDATE_COMMAND_UI(34029, OnUpdateCommand34029)
     ON_COMMAND(34030, OnCommand34030)
     ON_UPDATE_COMMAND_UI(34030, OnUpdateCommand34030)
-    ON_UPDATE_COMMAND_UI(34014, OnUpdateCommand34014)
-    ON_UPDATE_COMMAND_UI(34015, OnUpdateCommand34015)
-    ON_UPDATE_COMMAND_UI(34013, OnUpdateCommand34013)
-    ON_UPDATE_COMMAND_UI(34018, OnUpdateCommand34018)
-    ON_UPDATE_COMMAND_UI(34019, OnUpdateCommand34019)
-    ON_UPDATE_COMMAND_UI(34017, OnUpdateCommand34017)
-    ON_UPDATE_COMMAND_UI(34016, OnUpdateCommand34016)
+    ON_UPDATE_COMMAND_UI(34014, OnUpdateDebugGiveCloak)
+    ON_UPDATE_COMMAND_UI(34015, OnUpdateDebugGiveWall)
+    ON_UPDATE_COMMAND_UI(34013, OnUpdateDebugGiveJump)
+    ON_UPDATE_COMMAND_UI(34018, OnUpdateDebugGiveShield)
+    ON_UPDATE_COMMAND_UI(34019, OnUpdateDebugGiveMapEraser)
+    ON_UPDATE_COMMAND_UI(34017, OnUpdateDebugGiveSpeed)
+    ON_UPDATE_COMMAND_UI(34016, OnUpdateDebugGiveSlow)
     ON_COMMAND(34032, OnCommand34032)
     ON_UPDATE_COMMAND_UI(34032, OnUpdateCommand34032)
     ON_WM_CREATE()
@@ -176,43 +176,43 @@ void CBumperView::OnUpdateCommand34011(CCmdUI* cmd_ui)
 }
 
 // STUB: HOVER 0x428590
-void CBumperView::OnCommand34014()
+void CBumperView::OnDebugGiveCloak()
 {
     // TODO
 }
 
 // STUB: HOVER 0x428610
-void CBumperView::OnCommand34015()
+void CBumperView::OnDebugGiveWall()
 {
     // TODO
 }
 
 // STUB: HOVER 0x428690
-void CBumperView::OnCommand34013()
+void CBumperView::OnDebugGiveJump()
 {
     // TODO
 }
 
 // STUB: HOVER 0x428710
-void CBumperView::OnCommand34018()
+void CBumperView::OnDebugGiveShield()
 {
     // TODO
 }
 
 // STUB: HOVER 0x428770
-void CBumperView::OnCommand34019()
+void CBumperView::OnDebugGiveMapEraser()
 {
     // TODO
 }
 
 // STUB: HOVER 0x4287d0
-void CBumperView::OnCommand34017()
+void CBumperView::OnDebugGiveSpeed()
 {
     // TODO
 }
 
 // STUB: HOVER 0x428830
-void CBumperView::OnCommand34016()
+void CBumperView::OnDebugGiveSlow()
 {
     // TODO
 }
@@ -267,43 +267,43 @@ void CBumperView::OnUpdateCommand34030(CCmdUI* cmd_ui)
 }
 
 // STUB: HOVER 0x428c30
-void CBumperView::OnUpdateCommand34014(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveCloak(CCmdUI* cmd_ui)
 {
     // TODO
 }
 
 // STUB: HOVER 0x428c60
-void CBumperView::OnUpdateCommand34015(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveWall(CCmdUI* cmd_ui)
 {
     // TODO
 }
 
 // STUB: HOVER 0x428c90
-void CBumperView::OnUpdateCommand34013(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveJump(CCmdUI* cmd_ui)
 {
     // TODO
 }
 
 // STUB: HOVER 0x428cc0
-void CBumperView::OnUpdateCommand34018(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveShield(CCmdUI* cmd_ui)
 {
     // TODO
 }
 
 // STUB: HOVER 0x428cf0
-void CBumperView::OnUpdateCommand34019(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveMapEraser(CCmdUI* cmd_ui)
 {
     // TODO
 }
 
 // STUB: HOVER 0x428d20
-void CBumperView::OnUpdateCommand34017(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveSpeed(CCmdUI* cmd_ui)
 {
     // TODO
 }
 
 // STUB: HOVER 0x428d50
-void CBumperView::OnUpdateCommand34016(CCmdUI* cmd_ui)
+void CBumperView::OnUpdateDebugGiveSlow(CCmdUI* cmd_ui)
 {
     // TODO
 }
