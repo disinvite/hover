@@ -17,16 +17,8 @@ IMPLEMENT_DYNAMIC(CFlagRemover, CFloorObj);
 IMPLEMENT_DYNAMIC(CSledPad, CFloorObj);
 IMPLEMENT_DYNAMIC(CHoldPad, CFloorObj);
 IMPLEMENT_DYNAMIC(CWall, CGameObj);
-IMPLEMENT_DYNCREATE(CBumperView, CView);
 IMPLEMENT_DYNAMIC(CCollider, CObject);
 IMPLEMENT_DYNAMIC(CRegionMatrix, CObject);
 IMPLEMENT_DYNAMIC(CSmokeBombPod, CPodObj);
 IMPLEMENT_DYNAMIC(CSpeedPod, CPodObj);
 IMPLEMENT_DYNAMIC(CTempWallPod, CPodObj);
-
-
-// STUB: HOVER 0x40c480
-void CBumperView::OnDraw(CDC*)
-{
-    // TODO
-}

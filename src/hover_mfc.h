@@ -110,28 +110,6 @@ protected:
     char padding[44];   // 0x84
 };
 
-// VTABLE: HOVER 0x4bb6d0
-// SIZE 0x55c
-class CBumperView : public CView {
-    DECLARE_DYNCREATE(CBumperView);
-public:
-    virtual void OnDraw(CDC*);
-
-    // SYNTHETIC: HOVER 0x41e5a0
-    // CBumperView::Construct
-
-    // SYNTHETIC: HOVER 0x41e700
-    // CBumperView::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x420dd0
-    // CBumperView::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c4cb0
-    // classCBumperView
-protected:
-    char padding[1320];     // 0x34
-};
-
 // VTABLE: HOVER 0x4bd100
 // SIZE 0x5c
 class CCollider : public CObject {

@@ -8,6 +8,7 @@ include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/reccmp.cmake")
 
 add_executable(hover WIN32
     src/CBumperDoc.cpp
+    src/CBumperView.cpp
     src/CMainFrame.cpp
     src/merlin.cpp
     src/hover_mfc.cpp
