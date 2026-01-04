@@ -3,8 +3,17 @@ address,type,symbol
 43e2cf,library,??2@YAPAXI@Z
 43e34a,library,??3@YAXPAX@Z
 43fd20,library,_memmove
+43ffe6,library,_wcslen
 440020,library,_memset
+440062,library,__mbschr
+44010e,library,__mbsnbcmp
 4403c0,library,_memcpy
 440510,library,_strlen
+440632,library,__mbsinc
 4406cc,library,_free
+440755,library,__strupr
+440830,library,__mbsrchr
+440ac7,library,__expand
+440c2a,library,__msize
 44104e,library,_malloc
+44bd97,library,?_wcstombsz@@YAHPADPBGI@Z
