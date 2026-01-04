@@ -293,25 +293,6 @@ public:
     // classCJumpPod
 };
 
-// VTABLE: HOVER 0x4bab30
-// SIZE 0x158
-class CMainFrame : public CFrameWnd {
-    DECLARE_DYNCREATE(CMainFrame);
-public:
-    virtual ~CMainFrame() {}
-
-    // SYNTHETIC: HOVER 0x41d600
-    // CMainFrame::Construct
-
-    // SYNTHETIC: HOVER 0x41dfd0
-    // CMainFrame::`scalar deleting destructor`
-
-    // SYNTHETIC: HOVER 0x426a50
-    // CMainFrame::GetRuntimeClass
-protected:
-    char padding[152];
-};
-
 // VTABLE: HOVER 0x4bcdc0
 // SIZE 0x100
 class CMapEraserPod : public CPodObj {
