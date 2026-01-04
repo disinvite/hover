@@ -3,29 +3,10 @@
 
 #include "stdafx.h"
 
+#include "CFloorObj.h"
 #include "CGameObj.h"
 #include "CPlayer.h"
 #include "CPodObj.h"
-
-// VTABLE: HOVER 0x4bc7f0
-// SIZE 0xb8
-class CFloorObj : public CGameObj {
-    DECLARE_DYNAMIC(CFloorObj);
-public:
-    // FUNCTION: HOVER 0x421890
-    virtual ~CFloorObj() {};
-
-    // SYNTHETIC: HOVER 0x4011f0
-    // CFloorObj::GetRuntimeClass
-
-    // SYNTHETIC: HOVER 0x4219d0
-    // CFloorObj::`scalar deleting destructor'
-
-    // GLOBAL: HOVER 0x4c53c8
-    // classCFloorObj
-protected:
-    char padding[52];   // 0x84
-};
 
 // VTABLE: HOVER 0x4bd100
 // SIZE 0x5c

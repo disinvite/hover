@@ -11,6 +11,7 @@ add_executable(hover WIN32
     src/CBumperDoc.cpp
     src/CBumperView.cpp
     src/CMainFrame.cpp
+    src/CFloorObj.cpp
     src/CGameObj.cpp
     src/CInviciblePod.cpp
     src/CJumpPod.cpp

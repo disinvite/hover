@@ -1,6 +1,5 @@
 #include "hover_mfc.h"
 
-IMPLEMENT_DYNAMIC(CFloorObj, CGameObj);
 IMPLEMENT_DYNAMIC(CHumanPlayer, CPlayer);
 IMPLEMENT_DYNAMIC(CRobotPlayer, CPlayer);
 IMPLEMENT_DYNAMIC(CFlag, CPodObj);
