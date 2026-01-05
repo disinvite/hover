@@ -12,7 +12,7 @@ class CSledPad : public CFloorObj {
 public:
     virtual ~CSledPad() {}
     virtual void VTable0x1c();
-    virtual void VTable0x20();
+    virtual void VTable0x20(undefined4, undefined4);
     virtual void VTable0x3c();
     virtual void VTable0x40();
     virtual void VTable0x44();

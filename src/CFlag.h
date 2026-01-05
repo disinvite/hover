@@ -12,8 +12,8 @@ class CFlag : public CPodObj {
 public:
     virtual ~CFlag() {};
     virtual void VTable0x1c();
-    virtual void VTable0x20();
-    virtual void VTable0x2c();
+    virtual void VTable0x20(undefined4, undefined4);
+    virtual BOOL VTable0x2c(undefined4);
     virtual void VTable0x3c();
     virtual void VTable0x40();
     virtual void VTable0x44();

@@ -58,11 +58,11 @@ public:
     // classCMerlinLine
 
 protected:
-    DWORD m_unk0x14;    // 0x14
-    DWORD m_unk0x18;    // 0x18
-    DWORD m_unk0x1c;    // 0x1c
-    DWORD m_unk0x20;    // 0x20
-    char padding[32];   // 0x24
+    DWORD m_unk0x14;         // 0x14
+    DWORD m_unk0x18;         // 0x18
+    DWORD m_unk0x1c;         // 0x1c
+    DWORD m_unk0x20;         // 0x20
+    undefined padding[32];   // 0x24
 };
 
 // VTABLE: HOVER 0x4bd438
@@ -86,16 +86,16 @@ public:
     // classCMerlinBSP
 
 protected:
-    WORD m_unk0x44;     // 0x44
-    WORD m_unk0x46;     // 0x46
-    WORD m_unk0x48;     // 0x48
-    WORD m_unk0x4a;     // 0x4a
-    char padding[2];    // 0x4c
-    DWORD m_unk0x50;    // 0x50
-    DWORD m_unk0x54;    // 0x54
-    DWORD m_unk0x58;    // 0x58
-    DWORD m_unk0x5c;    // 0x5c
-    char padding2[8];   // 0x60
+    WORD m_unk0x44;          // 0x44
+    WORD m_unk0x46;          // 0x46
+    WORD m_unk0x48;          // 0x48
+    WORD m_unk0x4a;          // 0x4a
+    undefined padding[2];    // 0x4c
+    DWORD m_unk0x50;         // 0x50
+    DWORD m_unk0x54;         // 0x54
+    DWORD m_unk0x58;         // 0x58
+    DWORD m_unk0x5c;         // 0x5c
+    undefined padding2[8];   // 0x60
 };
 
 // VTABLE: HOVER 0x4bd348
@@ -130,7 +130,7 @@ protected:
     DWORD m_unk0x60;        // 0x60
     DWORD m_unk0x64;        // 0x64
     DWORD m_unk0x68;        // 0x68
-    char padding[4];        // 0x6c
+    undefined padding[4];   // 0x6c
 };
 
 // VTABLE: HOVER 0x4bd3c0
@@ -187,7 +187,7 @@ protected:
     CString m_str0x68;      // 0x68
     CString m_str0x74;      // 0x74
     CString m_str0x80;      // 0x80
-    char padding[24];       // 0x8c
+    undefined padding[24];  // 0x8c
     WORD m_unk0xa4;         // 0xa4
     WORD m_unk0xa6;         // 0xa6
     WORD m_unk0xa8;         // 0xa8
@@ -261,7 +261,7 @@ public:
     // classCMerlinWorld
 
 protected:
-    char padding[16];           // 0x04
+    undefined padding[16];      // 0x04
     CObArray m_array0x14;       // 0x14
     CObArray m_array0x28;       // 0x28
     CObArray m_array0x3c;       // 0x3c

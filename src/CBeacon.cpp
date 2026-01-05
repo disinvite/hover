@@ -3,7 +3,8 @@
 IMPLEMENT_DYNAMIC(CBeacon, CGameObj);
 
 // STUB: HOVER 0x423e50
-void CBeacon::VTable0x38()
+BOOL CBeacon::VTable0x38(undefined4)
 {
     // TODO
+    return TRUE;
 }

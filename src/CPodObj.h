@@ -13,10 +13,10 @@ public:
     // FUNCTION: HOVER 0x411580
     virtual ~CPodObj() {}
     virtual void VTable0x1c();
-    virtual void VTable0x20();
-    virtual void VTable0x28();
-    virtual void VTable0x2c();
-    virtual void VTable0x30();
+    virtual void VTable0x20(undefined4, undefined4);
+    virtual BOOL VTable0x28(undefined4, undefined4, undefined4);
+    virtual BOOL VTable0x2c(undefined4);
+    virtual BOOL VTable0x30(undefined4);
     virtual void VTable0x3c();
     virtual void VTable0x40();
     virtual void VTable0x44();
@@ -30,7 +30,7 @@ public:
     // GLOBAL: HOVER 0x4c5318
     // classCPodObj
 protected:
-    char padding[124];  // 0x84
+    undefined padding[124];  // 0x84
 };
 
 #endif // CPODOBJ_H

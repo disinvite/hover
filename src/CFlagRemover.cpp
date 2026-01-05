@@ -3,7 +3,7 @@
 IMPLEMENT_DYNAMIC(CFlagRemover, CFloorObj);
 
 // STUB: HOVER 0x422920
-void CFlagRemover::VTable0x20()
+void CFlagRemover::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }

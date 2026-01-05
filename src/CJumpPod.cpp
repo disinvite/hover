@@ -21,13 +21,13 @@ void CJumpPod::VTable0x1c()
 }
 
 // STUB: HOVER 0x42aac0
-void CJumpPod::VTable0x20()
+void CJumpPod::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }
 
 // STUB: HOVER 0x42ac60
-void CJumpPod::VTable0x24()
+void CJumpPod::VTable0x24(undefined4)
 {
     // TODO
 }

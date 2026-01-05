@@ -49,7 +49,7 @@ protected:
     afx_msg void OnDebugDecRed();
     afx_msg void OnDebugIncRed();
 
-    char padding[33856];    // 0x60
+    undefined padding[33856];    // 0x60
 };
 
 #endif // CBUMPERDOC_H

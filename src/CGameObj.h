@@ -15,16 +15,16 @@ public:
     // FUNCTION: HOVER 0x40d220
     virtual ~CGameObj() {}
 
-    virtual void VTable0x14();
-    virtual void VTable0x18();
+    virtual BOOL VTable0x14();
+    virtual BOOL VTable0x18();
     virtual void VTable0x1c();
-    virtual void VTable0x20();
-    virtual void VTable0x24();
-    virtual void VTable0x28();
-    virtual void VTable0x2c();
-    virtual void VTable0x30();
-    virtual void VTable0x34();
-    virtual void VTable0x38();
+    virtual void VTable0x20(undefined4, undefined4);
+    virtual void VTable0x24(undefined4);
+    virtual BOOL VTable0x28(undefined4, undefined4, undefined4);
+    virtual BOOL VTable0x2c(undefined4);
+    virtual BOOL VTable0x30(undefined4);
+    virtual BOOL VTable0x34(undefined4, undefined4, undefined4, undefined4*);
+    virtual BOOL VTable0x38(undefined4);
     virtual void VTable0x3c();
     virtual void VTable0x40();
     virtual void VTable0x44();
@@ -42,7 +42,7 @@ public:
     // classCGameObj
 
 protected:
-    char padding[128];  // 0x04
+    undefined padding[128];  // 0x04
 };
 
 #endif // CGAMEOBJ_H

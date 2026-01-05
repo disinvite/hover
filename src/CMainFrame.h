@@ -66,9 +66,9 @@ protected:
     DWORD m_unk0xc0;        // 0xc0
     HMODULE m_library;      // 0xc4
     DWORD m_unk0xc8;        // 0xc8
-    char padding[4];        // 0xca
+    undefined padding[4];   // 0xca
     DWORD m_unk0xd0;        // 0xd0
-    char padding2[16];      // 0xd4
+    undefined padding2[16]; // 0xd4
     CStatusBar m_statusBar; // 0xe4
 
     DECLARE_MESSAGE_MAP()

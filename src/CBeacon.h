@@ -11,7 +11,7 @@ class CBeacon : public CGameObj {
     DECLARE_DYNAMIC(CBeacon);
 public:
     virtual ~CBeacon() {};
-    virtual void VTable0x38();
+    virtual BOOL VTable0x38(undefined4);
 
     // SYNTHETIC: HOVER 0x40bc40
     // CBeacon::GetRuntimeClass
@@ -22,7 +22,7 @@ public:
     // GLOBAL: HOVER 0x4c5790
     // classCBeacon
 protected:
-    char padding[44];   // 0x84
+    undefined padding[44];   // 0x84
 };
 
 #endif // CBEACON_H

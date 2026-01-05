@@ -82,7 +82,7 @@ protected:
     afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags);
     afx_msg void OnCommand34034();
 
-    char padding[1320];     // 0x34
+    undefined padding[1320];     // 0x34
 };
 
 #endif // CBUMPERVIEW_H

@@ -41,7 +41,7 @@ public:
 protected:
     DECLARE_MESSAGE_MAP()
 
-    // unsigned char padding[832];     // 0xd4 ?
+    // unsigned padding[832];        // 0xd4 ?
     CRITICAL_SECTION m_critical0;    // 0x0d4
     CRITICAL_SECTION m_critical1;    // 0x0ec
     CRITICAL_SECTION m_critical2;    // 0x104

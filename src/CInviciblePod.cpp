@@ -21,7 +21,7 @@ void CInviciblePod::VTable0x40()
 }
 
 // STUB: HOVER 0x4181e0
-void CInviciblePod::VTable0x20()
+void CInviciblePod::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }

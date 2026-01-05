@@ -3,9 +3,10 @@
 IMPLEMENT_DYNAMIC(CFlag, CPodObj);
 
 // STUB: HOVER 0x414470
-void CFlag::VTable0x2c()
+BOOL CFlag::VTable0x2c(undefined4)
 {
     // TODO
+    return FALSE;
 }
 
 // STUB: HOVER 0x414d00
@@ -21,7 +22,7 @@ void CFlag::VTable0x40()
 }
 
 // STUB: HOVER 0x41ae40
-void CFlag::VTable0x20()
+void CFlag::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }

@@ -9,7 +9,7 @@ void CHoldPad::VTable0x1c()
 }
 
 // STUB: HOVER 0x42c1b0
-void CHoldPad::VTable0x20()
+void CHoldPad::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }

@@ -3,7 +3,7 @@
 IMPLEMENT_DYNAMIC(CSledPad, CFloorObj);
 
 // STUB: HOVER 0x41a5c0
-void CSledPad::VTable0x20()
+void CSledPad::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }

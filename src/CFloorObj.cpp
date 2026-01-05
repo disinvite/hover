@@ -3,27 +3,30 @@
 IMPLEMENT_DYNAMIC(CFloorObj, CGameObj);
 
 // STUB: HOVER 0x40c620
-void CFloorObj::VTable0x2c()
+BOOL CFloorObj::VTable0x2c(undefined4)
 {
     // TODO
+    return FALSE;
 }
 
 // STUB: HOVER 0x40d730
-void CFloorObj::VTable0x20()
+void CFloorObj::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }
 
 // STUB: HOVER 0x413220
-void CFloorObj::VTable0x34()
+BOOL CFloorObj::VTable0x34(undefined4, undefined4, undefined4, undefined4*)
 {
     // TODO
+    return TRUE;
 }
 
 // STUB: HOVER 0x41a960
-void CFloorObj::VTable0x30()
+BOOL CFloorObj::VTable0x30(undefined4)
 {
     // TODO
+    return TRUE;
 }
 
 // STUB: HOVER 0x42b800
@@ -33,9 +36,10 @@ void CFloorObj::VTable0x1c()
 }
 
 // STUB: HOVER 0x42b810
-void CFloorObj::VTable0x28()
+BOOL CFloorObj::VTable0x28(undefined4, undefined4, undefined4)
 {
     // TODO
+    return FALSE;
 }
 
 // STUB: HOVER 0x42b860

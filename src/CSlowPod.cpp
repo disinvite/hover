@@ -15,7 +15,7 @@ void CSlowPod::VTable0x40()
 }
 
 // STUB: HOVER 0x4226d0
-void CSlowPod::VTable0x20()
+void CSlowPod::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }

@@ -3,9 +3,10 @@
 IMPLEMENT_DYNAMIC(CPlayer, CGameObj);
 
 // STUB: HOVER 0x408820
-void CPlayer::VTable0x30()
+BOOL CPlayer::VTable0x30(undefined4)
 {
     // TODO
+    return TRUE;
 }
 
 // STUB: HOVER 0x408960
@@ -27,21 +28,23 @@ void CPlayer::VTable0x1c()
 }
 
 // STUB: HOVER 0x40c220
-void CPlayer::VTable0x20()
+void CPlayer::VTable0x20(undefined4, undefined4)
 {
     // TODO
 }
 
 // STUB: HOVER 0x42bfa0
-void CPlayer::VTable0x2c()
+BOOL CPlayer::VTable0x2c(undefined4)
 {
     // TODO
+    return FALSE;
 }
 
 // STUB: HOVER 0x42bfc0
-void CPlayer::VTable0x28()
+BOOL CPlayer::VTable0x28(undefined4, undefined4, undefined4)
 {
     // TODO
+    return FALSE;
 }
 
 // STUB: HOVER 0x42c050

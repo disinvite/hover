@@ -23,7 +23,7 @@ public:
     // GLOBAL: HOVER 0x4c55a0
     // classCCollider
 protected:
-    char padding[88];   // 0x04
+    undefined padding[88];   // 0x04
 };
 
 // VTABLE: HOVER 0x4bca88
@@ -93,7 +93,7 @@ public:
     // GLOBAL: HOVER 0x4c55b8
     // classCRegionMatrix
 protected:
-    char padding[20];
+    undefined padding[20];
 };
 
 // VTABLE: HOVER 0x4bcce0
@@ -112,7 +112,7 @@ public:
     // GLOBAL: HOVER 0x4c54b8
     // classCRobotPlayer
 protected:
-    char padding[1164];
+    undefined padding[1164];
 };
 
 // VTABLE: HOVER 0x4bc1f0
@@ -182,7 +182,7 @@ public:
     // GLOBAL: HOVER 0x4c5570
     // classCWall
 protected:
-    char padding[28];
+    undefined padding[28];
 };
 
 #endif // HOVER_MFC_H
