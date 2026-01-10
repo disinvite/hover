@@ -8,6 +8,7 @@ targets:
       - metadata/library.csv
       - metadata/mfc.csv
       - metadata/mfc-private.csv
+      - metadata/scalar-dtor.csv
     ghidra:
       ignore_types: []
       ignore_functions: []

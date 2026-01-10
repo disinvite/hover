@@ -18,4 +18,9 @@ address,type,symbol
 440ac7,library,__expand
 440c2a,library,__msize
 44104e,library,_malloc
+442523,library,__cinit
 44bd97,library,?_wcstombsz@@YAHPADPBGI@Z
+4c99e4,global,___xc_a
+4c9b20,global,___xc_z
+4c9b24,global,___xi_a
+4c9b34,global,___xi_z

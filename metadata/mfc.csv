@@ -65,6 +65,8 @@ address,type,symbol
 449c66,function,?InsertAt@CPtrArray@@QAEXHPAXH@Z
 449cf3,function,?RemoveAt@CPtrArray@@QAEXHH@Z
 449d2a,function,??0CMapStringToOb@@QAE@H@Z
+449df0,function,?RemoveAll@CMapStringToOb@@QAEXXZ
+449e50,function,??1CMapStringToOb@@UAE@XZ
 449f9b,function,??ACMapStringToOb@@QAEAAPAVCObject@@PBD@Z
 44a070,function,?Serialize@CMapStringToOb@@UAEXAAVCArchive@@@Z
 44a1ae,function,??0CMapPtrToPtr@@QAE@H@Z
@@ -156,6 +158,7 @@ address,type,symbol
 44be30,function,?AfxLoadString@@YGHIPAD@Z
 44be56,function,?AfxExtractSubString@@YGHAAVCString@@PBDHD@Z
 44befb,function,??0CWnd@@QAE@XZ
+44bf68,function,??0CWnd@@AAE@PAUHWND__@@@Z
 44c033,function,?ModifyStyle@CWnd@@SGHPAUHWND__@@KKI@Z
 44c04e,function,?ModifyStyleEx@CWnd@@SGHPAUHWND__@@KKI@Z
 44c244,function,?AfxCallWndProc@@YGJPAVCWnd@@PAUHWND__@@IIJ@Z
@@ -232,6 +235,8 @@ address,type,symbol
 44e61b,function,?DeleteTempMap@CMenu@@SGXXZ
 44e631,function,?FromHandle@CMenu@@SGPAV1@PAUHMENU__@@@Z
 44e649,function,?FromHandlePermanent@CMenu@@SGPAV1@PAUHMENU__@@@Z
+44e6ad,function,?Detach@CMenu@@QAEPAUHMENU__@@XZ
+44e6dc,function,?DestroyMenu@CMenu@@QAEHXZ
 44e6f4,function,?DrawItem@CMenu@@UAEXPAUtagDRAWITEMSTRUCT@@@Z
 44e6f7,function,?MeasureItem@CMenu@@UAEXPAUtagMEASUREITEMSTRUCT@@@Z
 44e70a,function,?GetRuntimeClass@CObject@@UBEPAUCRuntimeClass@@XZ
@@ -249,6 +254,7 @@ address,type,symbol
 44e9ee,function,?OsErrorToException@CFileException@@SGHJ@Z
 44ee8c,function,??0CFile@@QAE@XZ
 44eeef,function,??0CFile@@QAE@H@Z
+44f01a,function,??1CFile@@UAE@XZ
 44f086,function,?Duplicate@CFile@@UBEPAV1@XZ
 44f0ff,function,?Open@CFile@@UAEHPBDIPAVCFileException@@@Z
 44f232,function,?Read@CFile@@UAEIPAXI@Z
@@ -354,6 +360,7 @@ address,type,symbol
 4524af,function,?OnCloseDocument@CDocument@@UAEXXZ
 452501,function,?OnIdle@CDocument@@UAEXXZ
 452502,function,?AddView@CDocument@@QAEXPAVCView@@@Z
+452522,function,?RemoveView@CDocument@@QAEXPAVCView@@@Z
 452554,function,?GetFirstViewPosition@CDocument@@UBEPAXXZ
 452558,function,?GetNextView@CDocument@@UBEPAVCView@@AAPAX@Z
 452573,function,?OnCmdMsg@CDocument@@UAEHIHPAXPAUAFX_CMDHANDLERINFO@@@Z
@@ -371,6 +378,7 @@ address,type,symbol
 452c38,function,?FillBuffer@CArchive@@QAEXI@Z
 452cf3,function,?GetMessageMap@CView@@MBEPBUAFX_MSGMAP@@XZ
 452cf9,function,??0CView@@IAE@XZ
+452d57,function,??1CView@@UAE@XZ
 452dbd,function,?PreCreateWindow@CView@@MAEHAAUtagCREATESTRUCTA@@@Z
 452de9,function,?OnCreate@CView@@IAEHPAUtagCREATESTRUCTA@@@Z
 452e1a,function,?OnDestroy@CView@@IAEXXZ
