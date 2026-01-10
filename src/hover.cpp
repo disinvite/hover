@@ -165,6 +165,13 @@ void CHoverApp::OnAppAbout()
     CSpeedPod *speedPod = new CSpeedPod();
     CTempWallPod *tempWallPod = new CTempWallPod();
     CWall *wall = new CWall();
+
+    CPen *pen = new CPen();
+    CBitmap *bitmap = new CBitmap();
+    CBrush *brush = new CBrush();
+    CMenu *menu = new CMenu();
+    CWindowDC *windc = new CWindowDC(NULL);
+    CPrintDialog *printdlg = new CPrintDialog(TRUE);
 }
 
 // STUB: HOVER 0x425730

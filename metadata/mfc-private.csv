@@ -14,4 +14,8 @@ address,type,name
 4526af,function,ReadStringLength
 4540b4,function,AppendFilterSuffix
 4572c5,function,AdjustRectangle
+45be81,function,DrawFrame
 45cd12,function,_AfxLoadDotBitmap
+4b7ff0,global,hfontMiniSys
+4b7ff4,global,hbmMiniSys
+4b8000,global,sizeMiniSys
