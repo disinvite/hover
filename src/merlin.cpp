@@ -28,12 +28,18 @@ CMerlinLine::CMerlinLine()
 // FUNCTION: HOVER 0x411b10
 void CMerlinObject::Serialize(CArchive& ar)
 {
+    // TODO: Better match on MSVC 2.1?
     if (ar.IsStoring()) {
         ar << m_string;
-        ar.Flush();
-        // TODO
+        ar << (WORD)0;
     } else {
+        WORD t;
         ar >> m_string;
+        ar >> t;
+        for (int i = 0; i < t; i++) {
+            BYTE x;
+            ar >> x;
+        }
     }
 }
 
